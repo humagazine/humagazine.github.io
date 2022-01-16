@@ -276,6 +276,8 @@ iframe{
 
 .tech-slideshow .mover {
   animation: moveSlideshow 20s linear infinite !important;
+  animation-iteration-count: infinite !important;
+  animation-play-state: running !important;
 }
 
 @keyframes moveSlideshow {
