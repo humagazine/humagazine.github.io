@@ -27,7 +27,6 @@
   text-transform: lowercase;
 }
 
-
 /* text */
 
 body {
@@ -82,6 +81,16 @@ h1 {
 
 #keywordsList {
   border-bottom: none;
+}
+
+.arrow {
+  content: url(futarrow.png);
+  width: auto;
+  height: 8vh;
+}
+
+.arrow:hover {
+  transform: translateY(-10px);
 }
 
 /* cover issue */
