@@ -25,12 +25,13 @@
   background-color: transparent !important;
   background-image: url(topb3r.png);
   background-size: contain;
+  border-bottom: none;
 }
 .headerCustom h1 {
   color: #fb42cc;
 }
 
-/* footer */ 
+/* footer */
 
 .footerCustom {
   background-color: transparent !important;
@@ -86,6 +87,10 @@ a:hover {
   margin-bottom: 1vh;
 }
 
+#keywordsList {
+  border-bottom: none;
+}
+
 #currentDateTime {
   background-color: transparent !important;
   border: none;
@@ -95,6 +100,7 @@ a:hover {
 
 .customCol{
   background-color: transparent !important;
+  border-bottom: none;
 }
 
 .customCol button, .customCol button:hover, .customCol button:active, footer button, footer button:active, footer button:hover  {
@@ -368,4 +374,3 @@ footer p, footer .nav-link {
 label, input {
   font-family: ZineTime;
 }
-
