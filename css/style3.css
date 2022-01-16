@@ -31,6 +31,10 @@
   color: #fb42cc;
 }
 
+a[year]:hover:after {
+  left: 5%;
+}
+
 /* footer */
 
 .footerCustom {

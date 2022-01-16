@@ -93,6 +93,14 @@ input, textarea {
   border: 1px solid black !important;
 }
 
+a[year]:hover:after {
+  color: rgba(0,0,0,0.1);
+  letter-spacing:10px;
+  font-family:"Century Schoolbook",Times,serif; /*"Century Schoolbook Monospace",*/
+  left: 7%;
+  top: -45px;
+}
+
 /* footer */
 
 .footerCustom {

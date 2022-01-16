@@ -285,10 +285,10 @@ a[year]:hover:after {
   content: attr(year);
   font-size:120px;
   /* letter-spacing:40px; */
-  color: rgba(0,0,0,0.1);
+  color: rgba(0,0,0,0.07);
   position: absolute;
   left: 6%;
-  top: -50px;
+  top: -45px;
   z-index: 0;
   width:50px;
   background: transparent;
