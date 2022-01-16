@@ -1,0 +1,520 @@
+/* @import url('https://fonts.cdnfonts.com/css/belle-epoque');
+
+* {
+	font-family: 'Belle Epoque', sans-serif;
+} */
+
+@font-face{
+ font-family: "Bembo";
+ src: url("./fonts/style1/BemboStd.otf");
+}
+
+@font-face{
+ font-family: "ArabesqueInitialen";
+ src: url("./fonts/style1/ArabesqueInitialen.ttf");
+}
+
+@font-face{
+  font-family: "Flanker Reg";
+  src: url("./fonts/style1/flanker-griffo.regular.otf");
+ }
+
+ @font-face{
+  font-family: "Flanker Italic";
+  src: url("./fonts/style1/flanker-griffo.italic.ttf");
+ }
+
+ @font-face{
+  font-family: "Flanker Bold";
+  src: url("./fonts/style1/flanker-griffo.bold.ttf");
+ }
+
+ @font-face{
+  font-family: "Flanker BoldIt";
+  src: url("./fonts/style1/flanker-griffo.bold-italic.ttf");
+ }
+
+ /* topbar */
+
+.headerCustom {
+  background-color: #f6f1e8 !important;
+  border-bottom: 2px solid black;
+  background-image: url(topbar1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center top;
+}
+
+#styleSelector a {
+  background-color: #f6f1e8 !important;
+  border-radius: 50px !important;
+  border: 1px solid black !important;
+  margin-right: 1vw;
+}
+
+#logo {
+  background-color: #f6f1e8 !important;
+  border-radius: 50px !important;
+  border: 1px solid black !important;
+  padding: 12px;
+}
+
+#mainMenu li {
+  margin-left: 1vw;
+  font-family: Flanker Bold;
+  background-color: #f6f1e8;
+}
+
+#mainMenu li:hover { /*stacosanonfunziona*/
+  color: white !important;
+}
+
+#mainMenu .dropdown-menu {
+  border: 1px solid black;
+  color: #B63323;
+  background-color: #f6f1e8;
+}
+
+#mainMenu .dropdown-menu li {
+  font-family: Flanker Reg;
+}
+
+#reviewName {
+  text-shadow: 1px 1px 2px white, 0 0 1em white
+  , 0 0 0.5em #f6f1e8;
+}
+
+#searchBtn {
+  border: 1px solid black;
+  background-color: #f6f1e8;
+}
+
+input, textarea {
+  border: 1px solid black !important;
+}
+
+/* footer */
+
+.footerCustom {
+  background-color: #f6f1e8 !important;
+  border-top: 2px solid black;
+  background-image: url(topbar1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center bottom;
+}
+
+footer h3 {
+  text-shadow: 1px 1px 2px white, 0 0 1em white
+  , 0 0 0.5em #f6f1e8;
+  font-family: Flanker Bold;
+  text-transform: uppercase;
+}
+
+footer form {
+  border: 1px solid black;
+  background-color: #f6f1e8;
+  padding: 20px !important;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+ }
+
+footer p, footer li {
+  background-color: #f6f1e8 !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer .nav-link {
+ color: black !important;
+}
+
+#teamMate1, #teamMate2 {
+  font-family: Flanker Bold !important;
+}
+
+#copy {
+  border-top: 1px solid black !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* text */
+
+h1 {
+  color: #B63323;
+  font-family: Flanker Bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2, h3, #kW {
+  color: #B63323 !important;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body {
+  background: #f6f1e8;
+  background-position: center;
+  background-origin: margin-box;
+  color: #1D1A13;
+  font-family: Flanker Reg;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* homepage */
+
+.kwCustom {
+  font-family: Flanker Bold;
+  color: black;
+}
+
+#currentDateTime {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none;
+  text-shadow: none;
+  color: #B63323 !important;
+  text-transform: uppercase;
+}
+
+.nav-scroller {
+  border-bottom: 1px solid black;
+}
+
+.customCol {
+  background: #f6f1e8 !important;
+  background-image: url(spacestyle1.png), url(space2style1.png) !important;
+  background-size: contain  !important;
+  background-size: 50vh, 50vh !important;
+  background-repeat: no-repeat  !important;
+  background-position: bottom, top  !important;
+  background-origin: border-box, border-box  !important;
+  padding-top: 20vh !important;
+  padding-bottom: 20vh !important;
+}
+
+#centralMain {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#keywordsList {
+  border-bottom: none;
+}
+
+
+/* documentatin pg */
+
+#documentationMain {
+background-image: url(framesxstyle1.png), url(framedxstyle1.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: left, right;
+}
+
+.list-group-item {
+  border-bottom: 1px solid black;
+}
+
+#list-example {
+  box-shadow: black;
+}
+
+/* cover */
+
+#coverstyle1 {
+ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: left, right;
+ background-origin: border-box;
+}
+
+#artMetaDiv {
+  height: 50vh;
+}
+
+.olCustom {
+ border-radius: 20px !important;
+ border:1px solid black;
+ background-color: #f6f1e8 !important;
+ padding: 5vh 5vw 5vh;
+}
+
+#issueMeta p {
+  text-align: center;
+  overflow-y: clip;
+}
+
+#issueMeta {
+ padding-top: 15vh;
+}
+
+#cover1 {
+  height: 54vh;
+  background-image: url(spacestyle1.png), url(space2style1.png);
+  background-size: 50vh, 50vh !important;
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+  background-origin: content-box, content-box;
+}
+
+#issueArticles {
+  text-align: center;
+  height: auto;
+}
+
+.metaTitle {
+  font-family: Flanker Bold;
+  text-transform: uppercase;
+}
+
+#artN1, #artN2, #artN3 {
+  font-family: Flanker Bold;
+  color: black;
+}
+
+#btnIssue, .customCol button, #centralMain button {
+  border-radius: 10px;
+  border: 1px solid black !important;
+  background-color: #f6f1e8 !important;
+  text-align: center;
+  padding: 18px;
+  text-transform: uppercase !important;
+  color:#B63323;
+}
+
+#openIssue {
+  margin-top: 20vh;
+}
+
+/* articles */
+
+#artRow {
+  border-top: 1px solid black;
+}
+
+.big-first-letter::first-letter {
+  font-family: ArabesqueInitialen;
+  font-size: 80px;
+  float: left;
+  line-height: 0.65;
+  padding: 0.05em 0.1em 0 0;
+}
+
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  p:first-of-type::first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 4;
+    /* undo other bits */
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0 0.25em 0 0;
+  }
+}
+
+.big-first-line::first-line {
+  font-family: ArabesqueInitialen;
+  font-size: 80px;
+}
+
+.subtitle {
+  color: black;
+  font-family: Flanker BoldIt;
+  font-size: 30px;
+}
+
+.imgSource {
+font-family: Flanker Italic;
+font-size: 11px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.imgCaption{
+  font-family: Flanker Italic;
+  font-size: 16px;
+}
+
+.imgFrame {
+background-image: url(basestyle1.png);
+background-position: bottom center;
+background-repeat: no-repeat;
+background-size: contain;
+background-origin: content-box;
+}
+
+/* imgFrame before
+height: 36vh;
+width: auto;
+border: 30px solid;
+border-image: url(basestyle1.png);
+border-image-slice: 0% 9% 100% 11%;
+border-image-width: 20% 20% 20% 20%;
+border-image-outset: 600px 0px 0px 0px;
+border-image-repeat: round round;
+padding: 0;
+*/
+
+.byline {
+  font-family: Flanker BoldIt;
+}
+
+.publicationDate {
+  font-family: Flanker Italic;
+  font-size: 11px;
+}
+
+a {
+  color: #B63323;
+}
+a:hover {
+  color: black;
+}
+
+.wmf-wp-with-preview {
+  color: #B63323 !important;
+  font-family: Flanker Reg !important;
+  border-bottom: 1px dashed #B63323 !important;
+}
+
+li.artiCol {
+ list-style: square !important;
+}
+
+.articleImg {
+filter: grayscale(90%);
+-webkit-filter: grayscale(90%);
+-moz-filter: grayscale(90%);
+-o-filter: grayscale(90%);
+-ms-filter: grayscale(90%);
+padding-bottom: 20vh;
+}
+
+.author {
+  color: #f6f1e8;
+  background-color: gray;
+  font-family: Flanker Italic;
+}
+
+.endTags {
+  color: #f6f1e8;
+  background-color: gray;
+}
+
+.lastPar{
+  height: 180vh !important;
+}
+
+#rl1_1,#rr1_1 {
+  width: 45% !important;
+  height: 180vh !important;
+}
+
+#rl1_2,#rr1_2 {
+  width: 45% !important;
+  height: 150vh !important;
+}
+
+#rl1_3, #rr1_3 {
+  width: 45% !important;
+  height: 120vh !important;
+}
+.endSx {
+  -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  float: left;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.endDx {
+  -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+    shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+    float: right;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+hr {
+  border:0;
+  margin: 0.5vh;
+  height: 6vh;
+  background:url(decor.png);
+}
+
+
+/* article page: metadata */
+
+#metaData1, #metaData2, #metaData3 {
+  background-image: url(metaFrame1.png);
+  height: 48vh;
+  width: 100%;
+  background-size: 48vh, auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#frameData1, #frameData2, #frameData3 {
+   margin: 17vh 4vw 0vh 4vw;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   height: 36vh !important;
+}
+
+#frameData1 ul, #frameData2 ul, #frameData3 ul {
+  overflow-y: clip;
+}
+
+
+#metaData1::-webkit-scrollbar, #metaData2::-webkit-scrollbar, #metaData3::-webkit-scrollbar, #frameData1::-webkit-scrollbar, #frameData2::-webkit-scrollbar, #frameData3::-webkit-scrollbar {
+  display: none;
+}
+
+/* nav-tabs */
+
+.nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover, #mainMenu li {
+  border: 0;
+  border-bottom: 1px solid black;
+  color: #B63323;
+}
+
+.nav-tabs .nav-link.active, #mainMenu li:hover, #mainMenu li:active {
+  color: white;
+  background-color: #B63323;
+  border-radius: 0;
+  border-bottom: 2px solid #B63323;
+}
+
+#tabs1, #tabs2, #tabs3 {
+  justify-content: space-evenly !important;
+  border-bottom: transparent;
+}
+
+
+/* scrollbar */
+
+#article1::-webkit-scrollbar-track, #article2::-webkit-scrollbar-track, #article3::-webkit-scrollbar-track  {
+  background-image: url(scrollstyle1.png);
+  background-size: contain;
+}
+#article1::-webkit-scrollbar, #article2::-webkit-scrollbar, #article3::-webkit-scrollbar {
+  width: 4vw;
+}
+#article1::-webkit-scrollbar-thumb, #article2::-webkit-scrollbar-thumb, #article3::-webkit-scrollbar-thumb {
+  background-color: #B63323;
+  height: 1vh;
+  border-radius: 100px;
+}
+
+.list-group-item {
+  background-color: #f6f1e8;
+}

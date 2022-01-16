@@ -1,0 +1,297 @@
+/* Main CSS file */
+
+/* Queste righe andavano in errore su tutte le pagine: */
+/* @import docsearch from '@docsearch/js'; */
+/* @import '@docsearch/css';
+
+#docsearch{
+  container: '#docsearch',
+  appId: 'R2IYF7ETH7',
+  apiKey: '599cec31baffa4868cae4e79f180729b',
+  indexName: 'docsearch',
+};
+*/
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: georgia,'times new roman',serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  text-align: justify;
+}
+
+button {
+  position: center;
+}
+
+/* homepage */
+
+#itemIcon1:hover {
+    content: url('pointer2.png');
+    transform:rotate(90deg);
+}
+#itemIcon2:hover {
+    content: url('50fingers.png');
+    width: 100px;
+    height: 100px;
+}
+#itemIcon3:hover {
+    content: url('rocknroll2.png');
+    width: 100px;
+    height: 100px;
+    transform:rotate(360deg);
+}
+#itemIcon4:hover {
+    content: url('pointer2.png');
+    transform:rotate(90deg);
+}
+#refreshIcon:hover {
+    transform:rotate(360deg);
+}
+
+#arrow4 {
+  position: relative;
+  transition: transform 250ms;
+}
+
+#arrow4:hover {
+  transform: translateY(-10px);
+}
+
+#harvardTest h3, #learnANewWord h3{
+ text-align: center;
+}
+
+
+/* documentation */
+
+#docCenter{
+  height: 72vh;
+  overflow-y: scroll;
+ }
+ #docCenter::-webkit-scrollbar {
+   display: none;
+}
+
+/* Issue Cover */
+#issueMeta {
+  text-align: center !important;
+}
+
+/* Article columns */
+.artiCol {
+    height: 66vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Metadata columns */
+.metaCol {
+    height: 18vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.metaTitle {
+  font-weight: 700;
+}
+
+
+.navbar {
+  height: 80pt;
+  transition: .3s; /* When it shrinks on scroll*/
+}
+
+#mainMenu {
+  transition: .3s;  /* When it shrinks on scroll*/
+  font-family: "";
+}
+
+#reviewName {
+  position:relative; /* NEEDED FOR Z-INDEX TO WORK! */
+  transition: .3s;  /* When it shrinks on scroll*/
+}
+
+.issueCoverContainer {
+  width: 35%;
+}
+
+#styleSelector a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header div.d-flex { /* Because on issue.html Bootstrap 4 adds this padding */
+  padding-left:0px;
+}
+
+.tab-pane label {
+  padding-right:4px;
+}
+
+
+/* Slim scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+/* END of slim scrollbar */
+
+
+/* Representative image of the articles */
+.articleImg {
+  width: 100%;
+}
+
+.imgSource {
+  font-size: x-small;
+}
+
+.imgCaption {
+  font-size: smaller;
+}
+
+
+/* Some article elements:
+Bigger first letter; ASIDE text */
+
+.big-first-letter::first-letter {
+  font-size: 200%;
+}
+
+aside { /* Side notes in the text of the articles */
+  width: 30%;
+  text-align: center;
+  margin-right: 15px;
+  float: left;
+  font-style: italic;
+  font-size: larger;
+  border: 1px;
+  border-style: solid none;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* Custom containers, mainly used for issue cover pages */
+@media (min-width: 768px) {
+    .container-small {
+        width: 300px;
+    }
+    .container-large {
+        width: 970px;
+    }
+}
+@media (min-width: 992px) {
+    .container-small {
+        width: 500px;
+    }
+    .container-large {
+        width: 1170px;
+    }
+}
+@media (min-width: 1200px) {
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1500px;
+    }
+}
+
+/*
+.container-small, .container-large {
+    max-width: 100%;
+}
+/*
+
+/* Format of labels into analysis tabs into metadata selectors */
+.analisysLabel {
+    font-weight: 600;
+}
+
+blockquote {
+  /* background-color: lightgray; */
+  /* padding: 4% ; */
+  font-style: italic;
+}
+
+.tableCaption {
+  margin-top: 50px;
+}
+
+
+/* These classes to avoid NAVBARS to wrap elements on multiple lines */
+.navbar-header {
+    float:left;
+}
+.navbar-nav {
+    float:right;
+}
+
+/* This is a Bootstrap 5 class, but we need to make it important in issue.html page, where we use Bootrstrap 4 */
+a.link-dark {
+  color:#212529!important;
+}
+
+.searchResult {
+  margin-bottom: 20px;
+}
+
+
+/* Basic Style */
+
+#centralMain {
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+}
+
+
+.headerCustom {
+  border-bottom: 1px solid darkgray;
+  margin-bottom:20px!important;
+}
+
+.customCol {
+  border-bottom: 1px solid darkgray;
+  border-radius:0!important;
+  background-color:transparent!important;
+}
+
+
+#keywordsList {
+  border-bottom: 1px solid darkgray;
+}
+
+
+
+
+a[year]:hover:after {
+  content: attr(year);
+  font-size:120px;
+  /* letter-spacing:40px; */
+  color: rgba(0,0,0,0.1);
+  position: absolute;
+  left: 6%;
+  top: -50px;
+  z-index: 0;
+  width:50px;
+  background: transparent;
+  pointer-events: none;
+}

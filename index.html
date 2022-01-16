@@ -1,7 +1,215 @@
-<html>
+<!doctype html>
+  <html lang="en">
+
   <head>
-  </head>
-  <body>
-    <p>Site under construction</p>
-  </body>
+    <title>hUmagazine</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS loaders -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style1.css" media="none" id="cssstyle1">
+    <link rel="stylesheet" href="css/style2.css" media="none" id="cssstyle2">
+    <link rel="stylesheet" href="css/style3.css" media="none" id="cssstyle3">
+    <link rel="stylesheet" href="css/style4.css" media="none" id="cssstyle4">
+
+    <!-- Search by Algolia -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"/>
+
+
+    <!-- Load jQuery -->
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Load our JS Library -->
+    <script language="javascript" src="js/llll.js"></script>
+</head>
+
+
+<body>
+
+ <!-- <div class="container-fluid">  MAIN CONTAINER -->
+
+    <!-- TOP BAR -->
+    <div id="topBar" class="sticky-top"></div> <!-- A jQuery function loads content inside this div -->
+
+    <!-- body -->
+
+    <main id="mainBody" class="container-fluid justify-content-md-around my-2">
+
+      <div class="nav-scroller align-items-start py-0 px-4 mb-4">
+        <nav id="keywordsList" class="nav d-flex justify-content-between">
+            <!-- Keywords list loaded by JS -->
+            <p class="p-2 fw-normal text-dark" href="#"><input type="text" id="currentDateTime"></p>
+        </nav>
+      </div>
+
+      <div class="container-fluid justify-content-center pb-3">
+        <div class="tech-slideshow">
+          <div class="mover"></div>
+        </div>
+      </div>
+
+    <div class="row align-items-start px-4">
+
+      <div class="col">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded customCol">
+              <h3 class="fst-italic">Think you’re not biased? Think again</h3>
+              <p class="mb-0"><b>Project Implicit</b> is a non-profit organization committed to advancing scientific knowledge about stereotypes, prejudice, and other group-based biases.</p>
+              <button type="button" class="btn mt-3 btn-outline-dark"><a href=" https://implicit.harvard.edu/implicit/takeatest.html" target="_blank">Take their test now</a></button>
+              <button type="button" class="btn mt-3 btn-outline-dark"><a href="https://www.projectimplicit.net" target="_blank">Learn more about the project</a></button>
+            </div>
+        </div>
+      </div>
+
+      <div id="centralMain" class="col col-md-6">
+          <nav class="navbar navbar-light justify-content-center">
+    <a class="nav-item nav-link active " href="#"onclick="switchToSS (document.getElementById('cssstyle1'),document.getElementById('cssstyle2'),document.getElementById('cssstyle3'),document.getElementById('cssstyle4'))">
+      <img id="itemIcon1" class="itemIcon" src="img/btns/one.png" width="92" height="92" alt="onefinger">
+    </a>
+    <a class="nav-item nav-link active" href="#" onclick="switchToSS (document.getElementById('cssstyle2'),document.getElementById('cssstyle1'),document.getElementById('cssstyle3'),document.getElementById('cssstyle4'))">
+      <img id="itemIcon2" class="itemIcon" src="img/btns/two.png" width="92" height="92" alt="twofingers">
+    </a>
+    <a class="nav-item nav-link active" href="#" onclick="switchToSS (document.getElementById('cssstyle3'),document.getElementById('cssstyle1'),document.getElementById('cssstyle2'),document.getElementById('cssstyle4'))">
+      <img id="itemIcon3" class="itemIcon" src="img/btns/three.png" width="92" height="92" alt="threefingers">
+    </a>
+    <a class="nav-item nav-link active" href="#" onclick="switchToSS (document.getElementById('cssstyle4'),document.getElementById('cssstyle1'),document.getElementById('cssstyle2'),document.getElementById('cssstyle3'))">
+      <img id="itemIcon4" class="itemIcon" src="img/btns/four.png" width="92" height="92" alt="fourfingers">
+    </a>
+    <a class="nav-item nav-link active" href="#" onclick="cleanUpSS()" alt="Clean Up">
+      <img id="refreshIcon" class="itemIcon" src="img/btns/refresh.png" width="92" height="92" alt="refresh button">
+    </a>
+  </nav>
+        <nav class="navbar navbar-light justify-content-between">
+          <img id="" class="" src="css/aldusarrow.png" width="80" height="80" alt="style 1 arrow">
+         <img id="" class="" src="css/aldusarrow.png" width="50" height="50" alt="style 1 arrow">
+         <img id="" class="" src="css/aldusarrow.png" width="50" height="50" alt="style 1 arrow">
+         <img id="arrow4" class="" src="css/futarrow.png" width="50" height="50" alt="style 1 arrow">
+         <img id="" class="" src="css/aldusarrow.png" width="50" height="50" alt="style 1 arrow">
+        </nav>
+        <nav class="navbar navbar-light justify-content-between">
+          <p>1500</p>
+          <p>1950</p>
+          <p>1990</p>
+          <p>2030</p>
+          <p>refresh</p>
+        </nav>
+
+          <h1 class="display-4 fst-italic">Welcome to this mf magazine</h1>
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+
+
+            <h3 class="fst-italic">Want to learn more?</h3>
+            <p class="lead my-3">Read the full documentation about hUmagazine's philosophy, design, and techical choices.</p>
+           <button type="button" class="btn mt-3 btn-outline-dark"><a href="documentation.html" target="_blank">Learn more...</a></button>
+
+      </div>
+
+      <div class="col">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded customCol">
+            <h3 class="fst-italic">Learn a new word!</h3>
+            <strong class="mb-0" id="learnterm">:</strong>  <!-- This div gets filled up with random term from glossaryDb.json -->
+            <span class="mb-0" id="learndefinition"></span> <!-- This div gets filled up with correspondent definition from glossaryDb.json -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid justify-content-center py-3">
+      <div class="tech-slideshow">
+        <div class="mover"></div>
+      </div>
+    </div>
+
+  </main>
+
+
+<!-- FOOTER -->
+<div id="footerBar"></div>
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Search by Algolia -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script> -->
+
+<!-- Js for current date and time -->
+<script>
+ var today = new Date();
+ var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+ var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+ var day = days[ today.getDay() ];
+ var month = months[ today.getMonth() ];
+
+ //var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+ //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+ //var dateTime = date+' '+time;
+
+ var currentDate = day + ", " + month + " " + today.getDate() + ", " + today.getFullYear();
+
+ document.getElementById("currentDateTime").value = currentDate;
+
+  // Random glossary definitions into lateral box
+  $.getJSON('./glossaryDb.json', function(objson){
+    const lenGloss = objson.glossary.length;
+    // console.log(lenGloss); // debug
+    const rndInt = randomIntFromInterval(0, lenGloss-1);
+    // console.log(rndInt); // debug
+    $("#learnterm").prepend(objson["glossary"][rndInt]["term"]);
+    $("#learndefinition").append(objson["glossary"][rndInt]["definition"]);
+  }).fail(function(){
+    //console.log("Get from glossaryDb: an error has occurred.");
+  });
+
+  // Populates the list of keywords on top of page reading keywords from issuesDb.json
+  $.getJSON('./issuesDb.json', function(objson){
+
+    const kwSet = new Set();
+    //for (i=objson["issues"].length-1; i>=0; i--) {
+    for (i=0; i<objson["issues"].length; i++) {
+      //console.log("i="+i);
+      for (a=1; a<=3; a++) { // Three articles for each magazine issue
+        //console.log("a="+a);
+        for (k=1; k<=3; k++) { // Three keywords for each article
+          //console.log("k="+k);
+          if (objson["issues"][i]["art"+a+"KW"+k]) {
+            kwSet.add(objson["issues"][i]["art"+a+"KW"+k]); // To avoid repetitions
+          }
+        }
+      }
+    }
+    var cntr=0;
+    for (let item of kwSet){
+      if (cntr<9) {
+        $("#keywordsList").prepend('<p class="p-2 link-secondary kwCustom mt-2">' + item + '</p>');
+        cntr++;
+      }
+    }
+    $("#keywordsList").prepend('<p id="kW" class="p-2 fw-normal text-dark mt-2">Keywords:</p>');
+  }).fail(function(){
+    console.log("Get from issuesDb: an error has occurred.");
+  });
+
+
+</script>
+
+
+</body>
+
+<!-- Script Loaders-->
+
+
 </html>

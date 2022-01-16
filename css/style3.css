@@ -1,0 +1,371 @@
+/* Style 3 */
+
+@font-face {
+  font-family: "ZineTime";
+  src: url("./fonts/style3/ZineTime.otf");
+}
+
+@font-face {
+  font-family: "Black Casper";
+  src: url("./fonts/style3/BlackCasper.ttf");
+}
+
+@font-face {
+  font-family: "Doctor Punk";
+  src: url("./fonts/style3/doctor\ punk.otf");
+}
+@font-face {
+  font-family: "Simple Things";
+  src: url("./fonts/style3/SimpleThings-Regular.woff");
+}
+
+/* topbar */
+
+.headerCustom {
+  background-color: transparent !important;
+  background-image: url(topb3r.png);
+  background-size: contain;
+}
+.headerCustom h1 {
+  color: #fb42cc;
+}
+
+/* footer */ 
+
+.footerCustom {
+  background-color: transparent !important;
+  background-image: url(footer.png);
+  background-size: cover;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+ }
+
+h1, h3 {
+  font-family: Doctor Punk;
+  color: black;
+  text-align: center;
+}
+
+h2, #kW, .subtitle {
+  font-family: ZineTime;
+}
+
+body {
+  background-color: white;
+  background-image: url(zine.png);
+  background-size: contain;
+  color: black;
+  font-family: Simple Things;
+}
+
+a {
+  color: #fb42cc;
+}
+
+a:hover {
+  color: black;
+}
+
+.wmf-wp-with-preview {
+  color: #fb42cc !important;
+  font-family: Zine Time !important;
+  border-bottom: 1px dashed #fb42cc !important;
+}
+
+/* homepage */
+
+.kwCustom {
+  border-color: #FAF8F9 !important;
+  color: #FAF8F9 !important;
+  border-radius: 10px 10px 10px 10px !important;
+  background-image: url(tape2.png) !important;
+  height: fit-content;
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+}
+
+#currentDateTime {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.customCol{
+  background-color: transparent !important;
+}
+
+.customCol button, .customCol button:hover, .customCol button:active, footer button, footer button:active, footer button:hover  {
+  padding: 20px;
+  background-image: url(btn3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+footer button:active, footer button:hover {
+  color: #fb42cc !important;
+}
+
+.mover { /* sto coso non funziona */
+  height: 10vh;
+  background:url(spac3.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-origin: margin-box;
+}
+
+/* coverissue */
+
+.coverCustom {
+  background-color: transparent !important;
+}
+
+#art1 {
+  background-image: url(bgpaper.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 35vh;
+  transform: rotate(-4deg);
+  position: relative;
+  padding: 8vh;
+}
+#art2 {
+  background-image: url(bgpaper.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 35vh;
+  transform: rotate(4deg);
+  position: relative;
+  padding: 8vh;
+}
+#art3 {
+  background-image: url(bgpaper.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 35vh;
+  transform: rotate(-4deg);
+  position: relative;
+  padding: 8vh;
+}
+
+#coverstyle1 {
+  background-image: url(queenel.png), url(grrrlpower.png), url(bikikill.png), url(warning.png), url(dtfyw.png), url(satan.jpg);
+  background-repeat: no-repeat;
+  background-size: 50vh, 30vh, 30vh, 30vh, 30vh, 30vh;
+  background-origin: content-box;
+  background-position: bottom left, top right, top left, bottom right, center left, center right;
+}
+/*
+  background-image: url(sexpistols.png), url(9.png), url(warning.png), url(security.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: bottom left, top right, center left, bottom right;
+  background-origin: content-box, margin-box, content-box, content-box;
+  background-size: auto, 50vh, 20vh, 20vh;
+}
+*/
+
+#issueMeta p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: clip;
+}
+
+#issueMeta {
+  padding-top: 80px;
+}
+
+#cover1 {
+  background-image: url(tornpaper.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 42vh;
+}
+
+#issueArticles {
+  text-align: center;
+  height: auto;
+}
+
+.metaTitle {
+  font-family: ZineTime;
+}
+
+#artN1, #artN2, #artN3 {
+  font-family: ZineTime;
+  color: black;
+}
+
+#openIssue {
+  margin-top: 40px;
+}
+
+#btnIssue {
+  padding: 20px;
+  background-image: url(btn3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+
+/* articles */
+
+.mention {
+ background-image: url(btn3.png);
+ background-size: contain;
+ color: #fb42cc;
+}
+
+/* nav-tabs */
+
+.nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  justify-content: start !important;
+  border-color: transparent !important;
+  font-family: Doctor Punk;
+  background-image: url(circle4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 18px;
+}
+
+
+.nav-tabs .nav-link.active {
+  border-color: transparent !important;
+  background-color: transparent !important;
+  color: #fb42cc;
+}
+
+#tabs1, #tabs2, #tabs3 {
+  justify-content: space-evenly !important;
+  border-bottom: transparent;
+}
+
+#metaData1, #metaData2, #metaData3 {
+  background-image: url(tornpaper.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 38vh;
+}
+
+#frameData1, #frameData2, #frameData3 {
+  height: 24vh;
+  overflow-y: scroll;
+  margin-top: 60px;
+}
+
+.articleImg {
+  filter: brightness(80%) saturate(139%) contrast(198%);
+  -webkit-filter: brightness(80%) saturate(139%) contrast(198%);
+  -moz-filter: brightness(80%) saturate(139%) contrast(198%);
+  -ms-filter: brightness(80%) saturate(139%) contrast(198%) ;
+  -o-filter: brightness(80%) saturate(139%) contrast(198%);
+}
+
+.imgFrame {
+ width: 100%;
+ height: 100%;
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+/* Slim scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+/* END of slim scrollbar */
+
+
+#metaData1 {
+  transform: rotate(2deg);
+  position: relative;
+}
+#metaData1:hover {
+  transform: rotate(-2deg);
+  top: -1.5em;
+  position: relative;
+}
+#metaData2 {
+  transform: rotate(-3deg);
+  position: relative;
+}
+#metaData2:hover {
+  transform: rotate(3deg);
+  top: -1.5em;
+  position: relative;
+}
+
+#metaData3 {
+  transform: rotate(1deg);
+  position: relative;
+}
+
+#metaData3:hover {
+  transform: rotate(-1deg);
+  top: -1.5em;
+  position: relative;
+}
+
+#article1 {
+  transform: rotate(-2deg);
+  position: relative;
+}
+
+#article1:hover {
+  transform: rotate(4deg);
+  top: -1.5em;
+  position: relative;
+}
+
+#article2 {
+  transform: rotate(3deg);
+  position: relative;
+}
+#article2:hover {
+  transform: rotate(-2deg);
+  top: -1.5em;
+  position: relative;
+}
+
+#article3 {
+  transform: rotate(-3deg);
+  position: relative;
+}
+#article3:hover {
+  transform: rotate(3deg);
+  top: -1.5em;
+  position: relative;
+}
+
+/* footer */
+
+footer p, footer .nav-link {
+  color: black !important;
+}
+
+#teamMate1, #teamMate2 {
+  font-family: ZineTime;
+  color: #fb42cc !important;
+}
+
+label, input {
+  font-family: ZineTime;
+}
+

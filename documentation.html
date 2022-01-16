@@ -1,0 +1,257 @@
+<!doctype html>
+  <html lang="en">
+
+  <head>
+    <title>hUmagazine</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS loaders -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style1.css" media="none" id="cssstyle1">
+    <link rel="stylesheet" href="css/style2.css" media="none" id="cssstyle2">
+    <link rel="stylesheet" href="css/style3.css" media="none" id="cssstyle3">
+    <link rel="stylesheet" href="css/style4.css" media="none" id="cssstyle4">
+
+    <!-- Load jQuery -->
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Load our JS Library -->
+    <script language="javascript" src="js/llll.js"></script>
+
+  </head>
+
+
+  <body>
+
+
+    <!-- TOP BAR -->
+    <div id="topBar" class="sticky-top"></div> <!-- A jQuery function loads content inside this div -->
+
+    <!-- body -->
+
+    <div id="documentationMain">
+    <main class="container justify-content-md-center" data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+      <div class="row g-5">
+
+        <!--<div class="col-md-auto">
+          <li>
+            <ul>The LLLL framwork</ul>
+            <ul>hUmagazine</ul>
+            <ul>Theme 1</ul>
+            <ul>Theme 2</ul>
+            <ul>Theme 3</ul>
+            <ul>Theme 4</ul>
+            <ul>Article Markup</ul>
+          </li>
+        </div>
+
+        <div class="col">
+          <h2>The LLLL framwork</h2>
+          <h2>hUmagazine</h2>
+          <h2>Theme 1</h2>
+          <h2>Theme 2</h2>
+          <h2>Theme 3</h2>
+          <h2>Theme 4</h2>
+          <h2>Article Markup</h2>
+        </div>
+
+        <div class="col-md-auto">
+          <img> <p>sticky img</p>
+        </div>
+
+      </div>-->
+
+      <div id="docSx" class="col-md-auto">
+        <div class="position-sticky" style="top: 2rem;">
+        <div id="list-example" class="list-group list-group-flush sticky">
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-1">The LLLL framwork</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-2">hUmagazine</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-3">Theme 1</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-4">Theme 2</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-5">Theme 3</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-6">Theme 4</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="#list-item-7">Article Markup</a>
+        </div>
+      </div>
+      </div>
+
+      <div id="docCenter" class="col col-md-6">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div class="position-relative top-0 start-50 translate-middle-x">
+        <h1>The hUmagazine Documentation</h1></div>
+
+          <p>hUmagazine is a collection of articles on feminism and gender identity, organized in thematic magazines and enriched with meaningful metadata for active use of the contents.</p>
+          <p>The portal can be viewed according to 4 typographic styles (5 considering the initial neutral style), each referring to a different period as described on the home page.</p>
+          <p>Each issue of the magazine shows the articles side by side on the same web page and allows for a comparative analysis of the available metadata.</p>
+
+          <h2 id="list-item-1">LLLL The Framework</h2>
+
+          <p>Our LLLL framework allows the management of any number of magazine issues, each containing 3 articles displayed simultaneously in 3 columns side by side.</p>
+          <p>Specific markups within articles enable the use of Metadata Selectors, while a basic textual analysis is always automatically processed regardless of the inserted tags.</p>
+          <p>Every page include two common elements - the header and the footer - which are loaded from the respective HTML files stored in the <code>/components</code> folder.</p>
+          <p>Each issue of the magazine provides:</p>
+          <ul style="list-style-type:circle;">
+            <li>a cover containing the name of the editor, the release date and a summary of the contents with complete details about the source of the articles, as well as some identifying keywords;</li>
+            <li>the actual magazine, always made up of 3 articles displayed side by side, and their respective metadata selectors.</li>
+          </ul>
+
+          <h3 id="list-item-2">Content Management</h3>
+          <p>The contents of the magazines are stored inside these elements, that must always be present in the hosting space of the website:</p>
+          <ul style="list-style-type:circle;">
+            <li>The file <code>issuesDb.json</code> in the root directory: it contains a main object having the key "issues", whose value is an array of objects, each with the details of the single issues of the magazine (number, publisher, release date, details on the source of the three articles and 3 keywords each)</li>
+            <li>The files of the individual articles, stored in the <code>/articles</code> folder, whose names must have this standard syntax:<br/>
+            <code>article[n_rivista]_[n_articolo].html</code> (e.g. "article1_3.html" for the third article of the first issue).<br/>
+            <li>Images and other multimedia contents can be stored in the <code>/img</code> folder and organized into separate subfolders for each article. However, they can be also stored elsewhere or loaded from external URLs.</li>
+          </ul>
+          <p>The system reads the issuesDb.json file to determine how many magazine issues have been defined, then dynamically arranges the corresponding items in the main menu, along with the covers and the contents while browsing.</p>
+
+
+          <h3 id="list-item-3">Markup</h3>
+          <p>The articles were tagged with significant metadata using <code>data-*</code> attributes, that give us the ability to embed custom data inside HTML elements and avoid Ajax calls or server-side database queries.</p>
+          <p>Each tag contains the following attributes (required for the selector to work properly):</p>
+          <ul>
+            <li><code>data-label</code>: It's the label that will be shown in the Metadata Selector;</li>
+            <li><code>data-sort</code>: It's the string that will be used for sorting (e.g. for persons, with the last name before the first name);</li>
+            <li><code>about</code>: Is the normalized topic indicator (e.g. both "social group" and "community" could be tagged with the <code>about="society"</code> attribute)</li>
+          </ul>
+
+          <h3 id="list-item-3">Metadata Selection</h3>
+          <p>Each article has a related Metadata Selector on top. It organizes into distinct tabs the metadata categories as identified inside the content. Each tab lists the words marked in the article body with that category, ordered by the content of the <code>data-sort</code> attribute.</p>
+          <p>By selecting a checkbox, the articles scroll to the first occurrence of the selected data, while every occurrence is highlighted with a random background color. The label of the selected checkbox gets highlighted in the same color. By clearing the checkbox, the text backgrounds become transparent again.</p>
+          <p>Regardless of the metadata categories used, at the bottom of each Metadata Selector there's a tab called "Analysis" which contains the data described in the next section.</p>
+
+          <h3 id="list-item-3">Text Analysis</h3>
+          <p>When each article is loaded into the framework, a statistical analysis of the text is performed which returns the following information:</p>
+          <ul>
+            <li>Total words, words average length and number of sentences identified;</li>
+            <li>Sentiment: The global sentiment score, that is the arithmetic mean of the sentiment score of each sentence. Single words are given a sentiment score from -5 to +5.</li>
+            <li>Sentiment amplitude: The arithmetic mean of the differences between the lowest and the highest sentiment value for each sentence (single word scores range from -5 to +5);</li>
+            <li>Politeness: The arithmetic mean of the politeness of each sentence, evaluated on many different features of natural language;</li>
+            <li>Dirtiness: The arithmetic mean of the dirtiness of each sentencs, evaluated on many different features of natural language.</li>
+            <li>The list of the first 10 most frequently used words in descending order, and net of the most common stopwords.</li>
+          </ul>
+          <p>The synthetic sentiment, politeness and dirtiness scores are calculated using a third party JavaScript component named <a href="https://github.com/Ulflander/compendium-js" target:"_blank">Compendium JS</a>. The procedure for calculating words frequency and displaying the first ten positions in descending order was entirely written from scratch. The stopwords list is the standard one from the <a href="https://gist.github.com/sebleier/554280" target="_blank">NLTK Library</a>.</p>
+
+          <h3 id="list-item-3">Wikipedia Previews</h3>
+          <p>Properly tagged parts of text show a preview of the corresponding Wikipedia page when hovering. Names with this feature enabled have the W of the Wikipedia logo at the right end, partially overlaid on the text as a watermark.</p>
+          <p>This function was realized through the JavaScript component <a href="https://github.com/wikimedia/wikipedia-preview" target="_blank">Wikipedia Preview</a>. Active elements have the <code>data-wikipedia-preview</code> boolean attribute and the <code>wmf-wp-with-preview</code> class.</p>
+
+          <h3>Internal Search Engine</h3>
+          <p>Our framework has an internal JavaScript search engine based on <a href="http://lunrjs.com" target="_blank">lunr</a>.</p>
+          <p>Being it part of the header, the search field is available on every page of the website. After inserting the words to be found, it looks for them inside the articles (it doesn't look inside static pages), then it returns the list and a short preview of the articles where the words have been found. Clicking on a result, it opens the issue containing that article.</p>
+
+          <h3>Message Form</h3>
+          <p>At the bottom right of the footer, there is a contact form to send ideas, proposals, considerations of any kind about hUmagazine. By submitting the form, an email is sent to the webmasters with the sender's email address and the message.</p>
+          <p>This function is based on the <a href="https://smtpjs.com/" target="_blank">SmtpJS.com</a> component. Sending takes place via the smtp.gmail.com server using an ad hoc account.</p>
+
+          <h2 id="list-item-4">hUmagazine</h2>
+          <p>...</p>
+          <h2 id="list-item-5">Theme 1</h2>
+          <h3>artistic and historical background</h3>
+          <p>...</p>
+          <h3>colours</h3>
+          <p>...</p>
+          <h3>sources/inspirations</h3>
+          <p>Sitography:</p>
+          <ul style="list-style-type:circle;">
+          <li>Sito 1: <a></a></li>
+          <li>Sito 2: <a></a></li>
+          <li>Sito 3: <a></a></li>
+        </ul>
+          <p>...</p>
+          <h2 id="list-item-6">Theme 2</h2>
+          <h3>artistic and historical background</h3>
+          <p>...</p>
+          <h3>colours</h3>
+          <p>...</p>
+          <h3>sources/inspirations</h3>
+          <p>...</p>
+          <p>Sitography:</p>
+          <ul style="list-style-type:circle;">
+          <li>Sito 1: <a></a></li>
+          <li>Sito 2: <a></a></li>
+          <li>Sito 3: <a></a></li>
+        </ul>
+          <h2 id="list-item-7">Theme 3</h2>
+          <h3>artistic and historical background</h3>
+          <p>...</p>
+          <h3>colours</h3>
+          <p>...</p>
+          <h3>sources/inspirations</h3>
+          <p>...</p>
+          <p>...</p>
+          <p>Sitography:</p>
+          <ul style="list-style-type:circle;">
+          <li>Sito 1: <a></a></li>
+          <li>Sito 2: <a></a></li>
+          <li>Sito 3: <a></a></li>
+        </ul>
+        </ul>
+          <h2 id="list-item-8">Theme 4</h2>
+          <h3>artistic and historical background</h3>
+          <p>...</p>
+          <h3>colours</h3>
+          <p>...</p>
+          <h3>sources/inspirations</h3>
+          <p>...</p>
+          <p>...</p>
+          <p>Sitography:</p>
+          <ul style="list-style-type:circle;">
+          <li>Sito 1: <a></a></li>
+          <li>Sito 2: <a></a></li>
+          <li>Sito 3: <a></a></li>
+        </ul>
+          <h2 id="list-item-9">Article Markup</h2>
+            <p>...</p>
+          </div>
+        </div>
+
+
+      <div id="docDx" class="col col-lg-2">
+        <div class="position-sticky" style="top: 2rem;">
+        <div id="list-example" class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action" href="#list-item-1"><img src="img/btns/refresh.png" width="50px" height="50px"></a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3"><img src="css/pointer2.png" width="50px" height="50px"></a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4"><img src="css/50hand.png" width="70px" height="70px"></a>
+          <a class="list-group-item list-group-item-action" href="#list-item-5"><img src="css/middlefinger.png" width="50px" height="50px"></a>
+          <a class="list-group-item list-group-item-action" href="#list-item-6"><img src="img/btns/refresh.png" width="50px" height="50px"></a>
+          <a class="list-group-item list-group-item-action" href="#list-item-7"><img src="img/btns/refresh.png" width="50px" height="50px"></a>
+        </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+      <!-- FOOTER -->
+    <div id="footerBar"></div>
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example'
+      })
+    </script>
+
+
+
+  </body>
+
+  <!-- Script Loaders-->
+
+
+  </html>

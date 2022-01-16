@@ -1,0 +1,74 @@
+
+<div id="footer" class="py-5 px-5 bg-light footerCustom">
+  <footer>
+    <div class="row">
+      <div class="col-4">
+        <h3>About the project</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">This project has been realized during the University of Bologna course in Information Modeling and Web Technologies held by Professor Fabio Vitali in the y.a. 2020-2021.</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">The website is built and managed by two students, Diego Chillo and Laura Travaglini, attending the course.</a></li>
+        </ul>
+      </div>
+
+      <div class="col-3">
+        <h3>Team</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" id="teamMate1" class="nav-link p-0 fw-normal text-dark">Diego Chillo</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">A creaky old man. Self-proclaimed code expert, he's pathetically trying to forget the years by going back to school.</a></li>
+          <li class="nav-item mb-2"><a href="#" id="teamMate2" class="nav-link p-0 fw-normal text-dark">Laura Travaglini</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">The young one, with fresh ideas and an extra gear when it comes to graphic choices and original features.</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-4 offset-1">
+        <form method="post">
+          <div class="mb-3">
+            <h3>yUor opinion matters!</h3>
+            <p>Na cosa tipo questo è il tuo magazine, dicci cosa ti piace e cosa no, la tua opione conta blablabla</p>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+           <textarea class="form-control" placeholder="Leave a comment here" id="comment"></textarea>
+           <label for="floatingTextarea2">Comments</label>
+          </div>
+          <button id="submit" class="btn btn-outline-dark" onclick="sendEmail()">Submit</button> <!-- type="submit" -->
+        </form>
+      </div>
+
+
+    </div>
+
+    <div id="copy" class="d-flex justify-content-between pt-4 pb-0 mt-4 border-top">
+      <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>
+  // Sends an email to the webmasters with the data in the form, using smtp.js
+  function sendEmail() {
+
+    var useremail=document.getElementById("emailAddress").value;
+    var commentcontent=document.getElementById("comment").value;
+
+  	Email.send({
+    Host : "smtp.gmail.com",
+    Username : "humagazine22@gmail.com",
+    Password : "hUm46421n3",
+  	To : "diego.chillo@outlook.it, laura.travaglini@icloud.com",
+  	From : "humagazine22@gmail.com",
+  	Subject : "A message from hUmagazine website",
+  	Body : "<div>This is an email sent from hUmagazine's contact form.<br/><br/></div><div>The user " + useremail + " says: <br/><br/></div><div>" + commentcontent+"<br/></div>",
+  	}).then(
+				alert("Thank you! Your message has been sent successfully.")
+  	);
+  }
+</script>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>hUmagazine</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS loaders -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style1.css" media="none" id="cssstyle1">
+    <link rel="stylesheet" href="css/style2.css" media="none" id="cssstyle2">
+    <link rel="stylesheet" href="css/style3.css" media="none" id="cssstyle3">
+    <link rel="stylesheet" href="css/style4.css" media="none" id="cssstyle4">
+
+    <!-- Wikipedia-preview stylesheet -->
+    <link rel="stylesheet" href="css/wikipedia-preview.css">
+
+    <!-- Load jQuery -->
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Loads the Compendium library for text analysis -->
+    <script type="text/javascript" src="js/compendium-js-master/dist/compendium.minimal.js"></script>
+
+    <!-- Load our JS Library -->
+    <script language="javascript" src="js/llll.js"></script>
+
+    <script language="javascript">$(document).ready(function() { loadArticles(); });</script>
+
+  </head>
+
+
+  <body>
+
+    <!-- <div class="container-fluid"> MAIN CONTAINER -->
+
+      <div id="topBar" class="sticky-top"></div> <!-- A jQuery function loads content inside this div -->
+
+
+      <main class="container-fluid justify-content-md-around my-4">  <!-- The smaller centered page is class "container" -->
+
+        <!-- METADATA ROW -->
+        <div id="metaRow" class="row align-items-start px-4 wrap">
+          <div class="col metaCol pt-2 mr-2" id="metaData1">
+            <div id="frameData1">
+            <ul class="nav nav-tabs justify-content-between" id="tabs1" role="tablist"></ul>
+            <div class="tab-content pt-2" id="content1"></div>
+          </div>
+          </div>
+          <div class="col metaCol pt-2 mr-2" id="metaData2">
+            <div id="frameData2">
+            <ul class="nav nav-tabs justify-content-between" id="tabs2" role="tablist"></ul>
+            <div class="tab-content pt-2" id="content2"></div>
+          </div>
+          </div>
+          <div class="col metaCol pt-2" id="metaData3">
+            <div id="frameData3">
+            <ul class="nav nav-tabs justify-content-between" id="tabs3" role="tablist"></ul>
+            <div class="tab-content pt-2" id="content3"></div>
+          </div>
+          </main>
+        </div>
+
+        <div class="container-fluid justify-content-center pb-3">
+          <div class="tech-slideshow">
+            <div class="mover"></div>
+          </div>
+        </div>
+
+
+        <!-- ARTICLE ROW -->
+        <div id="artRow" class="row align-items-start px-4 py-4 wrap">
+           <div class="col artiCol pt-2 mr-2" id="article1"></div>
+           <div class="col artiCol pt-2 mr-2" id="article2"></div>
+           <div class="col artiCol pt-2" id="article3"></div>
+        </div> <!-- END of article row -->
+
+        <div class="container-fluid justify-content-center pb-3">
+          <div class="tech-slideshow">
+            <div class="mover"></div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- END Article section -->
+
+
+      <!-- FOOTER -->
+      <div id="footerBar"></div>
+
+
+    <!-- </div> MAIN CONTAINER -->
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        // Metadata and article columns widening only for style 4
+        $(function() {
+
+          // Column 1
+          $('#metaData1').hover(function() {
+            if ($('#cssstyle4').attr('media')=='') {
+              $('#article1').css('flex', '3');
+              $('#metaData1').css('flex', '3');
+            }
+          }, function() {
+              $('#article1').css('flex', '1');
+              $('#metaData1').css('flex', '1');
+          });
+          $('#article1').hover(function() {
+            if ($('#cssstyle4').attr('media')=='') {
+              $('#article1').css('flex', '3');
+              $('#metaData1').css('flex', '3');
+            }
+          }, function() {
+              $('#article1').css('flex', '1');
+              $('#metaData1').css('flex', '1');
+          });
+
+          // Column 2
+          $('#metaData2').hover(function() {
+            if ($('#cssstyle4').attr('media')=='') {
+              $('#article2').css('flex', '3');
+              $('#metaData2').css('flex', '3');
+            }
+          }, function() {
+              $('#article2').css('flex', '1');
+              $('#metaData2').css('flex', '1');
+          });
+          $('#article2').hover(function() {
+            if ($('#cssstyle4').attr('media')=='') {
+              $('#article2').css('flex', '3');
+              $('#metaData2').css('flex', '3');
+            }
+          }, function() {
+              $('#article2').css('flex', '1');
+              $('#metaData2').css('flex', '1');
+          });
+
+          // Column 3
+          $('#metaData3').hover(function() {
+            if ($('#cssstyle4').attr('media')=='') {
+              $('#article3').css('flex', '3');
+              $('#metaData3').css('flex', '3');
+            }
+          }, function() {
+              $('#article3').css('flex', '1');
+              $('#metaData3').css('flex', '1');
+          });
+          $('#article3').hover(function() {
+            if ($('#cssstyle4').attr('media')=='') {
+              $('#article3').css('flex', '3');
+              $('#metaData3').css('flex', '3');
+            }
+          }, function() {
+              $('#article3').css('flex', '1');
+              $('#metaData3').css('flex', '1');
+          });
+
+
+        });
+
+    </script>
+
+
+  </body>
+
+  <!-- WIKIPEDIA PREVIEW SCRIPT INITIALIZATION -->
+  <script src="js/wikipedia-preview.production.js"></script>
+
+
+<!-- Script Loaders-->
+
+
+</html>
