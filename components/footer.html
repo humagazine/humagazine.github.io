@@ -58,12 +58,12 @@
 
     var useremail=document.getElementById("emailAddress").value;
     var commentcontent=document.getElementById("comment").value;
-
+    // , laura.travaglini@icloud.com
   	Email.send({
     Host : "smtp.gmail.com",
     Username : "humagazine22@gmail.com",
     Password : "hUm46421n3",
-  	To : "diego.chillo@outlook.it, laura.travaglini@icloud.com",
+  	To : "diego.chillo@outlook.it",
   	From : "humagazine22@gmail.com",
   	Subject : "A message from hUmagazine website",
   	Body : "<div>This is an email sent from hUmagazine's contact form.<br/><br/></div><div>The user " + useremail + " says: <br/><br/></div><div>" + commentcontent+"<br/></div>",
