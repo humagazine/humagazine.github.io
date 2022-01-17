@@ -32,38 +32,6 @@ button {
 
 /* homepage */
 
-#itemIcon1:hover {
-    content: url('pointer2.png');
-    transform:rotate(90deg);
-}
-#itemIcon2:hover {
-    content: url('50fingers.png');
-    width: 100px;
-    height: 100px;
-}
-#itemIcon3:hover {
-    content: url('rocknroll2.png');
-    width: 100px;
-    height: 100px;
-    transform:rotate(360deg);
-}
-#itemIcon4:hover {
-    content: url('pointer2.png');
-    transform:rotate(90deg);
-}
-#refreshIcon:hover {
-    transform:rotate(360deg);
-}
-
-#arrow4 {
-  position: relative;
-  transition: transform 250ms;
-}
-
-#arrow4:hover {
-  transform: translateY(-10px);
-}
-
 #harvardTest h3, #learnANewWord h3{
  text-align: center;
 }
