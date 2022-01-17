@@ -33,6 +33,10 @@
   background: none;
 }
 
+a[year]:hover:after {
+  top: -40px;
+}
+
 /* footer */
 
 textarea::-webkit-scrollbar {

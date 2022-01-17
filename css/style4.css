@@ -27,6 +27,10 @@
   text-transform: lowercase;
 }
 
+a[year]:hover:after {
+  top: -30px;
+}
+
 /* text */
 
 body {
