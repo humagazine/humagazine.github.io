@@ -15,7 +15,7 @@
 }
 
 @font-face{
-  font-family: "Goudylni";
+  font-family: "GoudyIni";
   src: url("./fonts/style1/GoudyIni.ttf");
  }
 
@@ -222,7 +222,6 @@ body {
   border-bottom: none;
 }
 
-
 /* documentatin pg */
 
 #documentationMain {
@@ -315,7 +314,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 .big-first-letter::first-letter {
-  font-family: Goudylni;
+  font-family: GoudyIni;
   font-size: 80px;
   float: left;
   line-height: 0.65;
@@ -335,7 +334,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 .big-first-line::first-line {
-  font-family: Goudylni;
+  font-family: GoudyIni;
   font-size: 80px;
 }
 
