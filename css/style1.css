@@ -103,7 +103,7 @@ a[year]:hover:after {
   letter-spacing:10px;
   font-family:"Century Schoolbook",Times,serif; /*"Century Schoolbook Monospace",*/
   left: 7%;
-  top: -45px;
+  top: 35px;
 }
 
 /* footer */
@@ -317,6 +317,10 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   border-top: 1px solid black;
 }
 
+.sepLine {
+  display:none;
+}
+
 .big-first-letter::first-letter {
   font-family: GoudyIni;
   font-size: 67.77px;
@@ -334,7 +338,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
     font-size: inherit;
     line-height: inherit;
     padding: 0 0.25em 0 0;
-  } 
+  }
 
   p:first-of-type::first-line {
     -webkit-initial-letter: 4;

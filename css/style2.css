@@ -303,6 +303,10 @@ iframe{
   color: black;
 }
 
+.sepLine {
+  display:none;
+}
+
 .wmf-wp-with-preview {
   color: #d4121a !important;
   font-family: Rockwell !important;
