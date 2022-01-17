@@ -57,6 +57,10 @@ h2, #kW, .subtitle {
   font-family: ZineTime;
 }
 
+#docCenter h3 {
+  font-family: ZineTime;
+}
+
 body {
   background-color: white;
   background-image: url(zine.png);
