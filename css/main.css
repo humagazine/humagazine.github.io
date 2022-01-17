@@ -59,6 +59,7 @@ button {
 }
 
 /* Metadata columns */
+
 .metaCol {
     height: 18vh;
     overflow-y: scroll;
@@ -67,6 +68,12 @@ button {
 
 .metaTitle {
   font-weight: 700;
+}
+
+.sepLine {
+  border-bottom: 1px solid darkgray;
+  margin-right:20px;
+  margin-left:10px;
 }
 
 
