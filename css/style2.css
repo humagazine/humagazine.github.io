@@ -127,6 +127,12 @@ button a {
   border-bottom: none;
 }
 
+.arrow {
+  content: url(arrow2.png);
+  width: auto;
+  height: 8vh;
+}
+
 /* cover issue */
 
 #coverstyle1 {
