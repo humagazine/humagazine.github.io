@@ -36,6 +36,12 @@ button {
  text-align: center;
 }
 
+.arrow {
+  content: url(arr0w.png);
+  width: auto;
+  height: 8vh;
+}
+
 /* documentation */
 
 #docCenter{
