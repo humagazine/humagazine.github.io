@@ -134,9 +134,25 @@ footer button:active, footer button:hover {
 }
 
 .arrow {
-  content: url(futarrow.png);
   width: auto;
   height: 8vh;
+}
+
+#a1 {
+  content: url(arrow34.png);
+}
+#a2 {
+  content: url(arrow31.png);
+}
+#a3 {
+  content: url(arrow33.png);
+}
+#a4 {
+  content: url(arrow32.png);
+  transform: scaleX(-1);
+}
+#a5 {
+  content: url(arrow35.png);
 }
 
 /* coverissue */
