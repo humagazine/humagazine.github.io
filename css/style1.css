@@ -226,6 +226,12 @@ body {
   border-bottom: none;
 }
 
+.arrow {
+  content: url(arrow1.png);
+  width: auto;
+  height: 8vh;
+}
+
 /* documentatin pg */
 
 #documentationMain {
