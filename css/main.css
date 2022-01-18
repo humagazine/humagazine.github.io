@@ -12,6 +12,10 @@
 };
 */
 
+h1, h2, h3, #kW {
+  font-family: 'Playfair Display',serif;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -26,8 +30,9 @@ p {
   text-align: justify;
 }
 
-button {
-  position: center;
+#centralMain h1 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* homepage */
@@ -36,10 +41,21 @@ button {
  text-align: center;
 }
 
+#centralMain .itemIcon { 
+ margin-left: auto;
+ margin-right: auto;
+}
+
 .arrow {
   content: url(arr0w.png);
   width: auto;
   height: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date {
+  text-align: center;
 }
 
 /* documentation */

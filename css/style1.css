@@ -66,7 +66,7 @@
 
 #mainMenu li {
   margin-left: 1vw;
-  font-family: Flanker Bold;
+  font-family: Flanker Bold !important;
   background-color: #f6f1e8;
 }
 
@@ -81,7 +81,7 @@
 }
 
 #mainMenu .dropdown-menu li {
-  font-family: Flanker Reg;
+  font-family: Flanker Reg !important;
 }
 
 #reviewName {
@@ -159,7 +159,7 @@ footer .nav-link {
 
 h1 {
   color: #B63323;
-  font-family: Flanker Bold;
+  font-family: Flanker Bold !important;
   font-size: 41.886px;
   text-transform: uppercase;
   text-align: center;
@@ -179,7 +179,7 @@ body {
   background-position: center;
   background-origin: margin-box;
   color: #1D1A13;
-  font-family: Flanker Reg;
+  font-family: Flanker Reg !important;
   font-size: 16px;
   text-align: justify;
   line-height: 1.618em;
@@ -188,7 +188,7 @@ body {
 /* homepage */
 
 .kwCustom {
-  font-family: Flanker Bold;
+  font-family: Flanker Bold !important;
   color: black;
 }
 
@@ -294,12 +294,12 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 .metaTitle {
-  font-family: Flanker Bold;
+  font-family: Flanker Bold !important;
   text-transform: uppercase;
 }
 
 #artN1, #artN2, #artN3 {
-  font-family: Flanker Bold;
+  font-family: Flanker Bold !important;
   color: black;
 }
 
@@ -328,7 +328,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 .big-first-letter::first-letter {
-  font-family: GoudyIni;
+  font-family: GoudyIni !important;
   font-size: 67.77px;
   float: left;
   line-height: 1.618em;
@@ -358,7 +358,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 .big-first-line::first-line {
-  font-family: GoudyIni;
+  font-family: GoudyIni !important;
   font-size: 67.77px;
   float: left;
   line-height: 1.618em;
@@ -367,20 +367,20 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 
 .subtitle {
   color: black;
-  font-family: Flanker BoldIt;
+  font-family: Flanker BoldIt !important;
   font-size: 25.888px;
   line-height: 1.618em;
 }
 
 .imgSource {
-font-family: Flanker Italic;
+font-family: Flanker Italic !important;
 font-size: 12.8px;
 text-transform: uppercase;
 text-align: center;
 }
 
 .imgCaption{
-  font-family: Flanker Italic;
+  font-family: Flanker Italic !important;
   font-size: 12.8px;
 }
 
@@ -405,11 +405,11 @@ padding: 0;
 */
 
 .byline {
-  font-family: Flanker BoldIt;
+  font-family: Flanker BoldIt !important;
 }
 
 .publicationDate {
-  font-family: Flanker Italic;
+  font-family: Flanker Italic !important;
   font-size: 12.8px;
 }
 
@@ -442,7 +442,7 @@ padding-bottom: 20vh;
 .author {
   color: #f6f1e8;
   background-color: gray;
-  font-family: Flanker Italic;
+  font-family: Flanker Italic !important;
 }
 
 .endTags {
