@@ -80,7 +80,7 @@ button, #mainMenu li, .dropdown-menu {
   color: #FAF8F9 !important;
 }
 
-button:hover,#mainMenu li:hover, .dropdown-item:hover  {
+button:hover,#mainMenu li:hover, .dropdown-item:hover {
   background: #d4121a !important;
   border-radius: 10px 10px 10px 10px !important;
 }
