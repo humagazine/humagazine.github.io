@@ -133,6 +133,12 @@ footer button:active, footer button:hover {
   background-origin: margin-box;
 }
 
+.arrow {
+  content: url(futarrow.png);
+  width: auto;
+  height: 8vh;
+}
+
 /* coverissue */
 
 .coverCustom {
