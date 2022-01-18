@@ -54,6 +54,18 @@ h1 {
   font-weight: 100;
 }
 
+a {
+ color: #48eefc !important;
+}
+
+#mainMenu a, #metaRow a {
+  color: black !important;
+}
+
+a:hover {
+ 
+}
+
 /* homepage */
 
 .kwCustom {
@@ -101,10 +113,6 @@ h1 {
 
 #issueMeta p{
   text-align: center;
-}
-
-#cover1 {
-
 }
 
 #issueArticles {
