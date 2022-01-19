@@ -119,7 +119,7 @@ a[year]:hover:after {
   background-image: url(topbar1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center bottom;
+  background-position: center bottom;
 }
 
 footer h3 {
@@ -144,6 +144,7 @@ footer p, footer li {
   background-color: #f6f1e8 !important;
   padding: 10px;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 footer .nav-link {
