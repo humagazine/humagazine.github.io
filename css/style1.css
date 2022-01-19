@@ -516,7 +516,7 @@ hr {
    height: 36vh !important;
    border: 1px solid black;
    border-radius: 20px;
-   padding: 1vh 2vw 1vh 2vw;
+   padding: 2vh 2vw 2vh 2vw;
 }
 
 #frameData1 ul, #frameData2 ul, #frameData3 ul {
