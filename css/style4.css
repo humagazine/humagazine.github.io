@@ -142,7 +142,13 @@ a:hover {
 }
 
 .sepLine {
-  display:none;
+  display: none;
+}
+
+.wmf-wp-with-preview {
+  color: #48eefc!important;
+  font-family: Antikor Reg !important;
+  border-bottom: 1px dashed #48eefc!important;
 }
 
 /* metadata nav tablist style */

@@ -394,6 +394,13 @@ footer button:active, footer button:hover {
   position: relative;
 }
 
+.wmf-wp-with-preview {
+  color: #fb42cc!important;
+  font-family: ZineTime !important;
+  border-bottom: 1px solid #fb42cc !important;
+  background-image: none !important;
+}
+
 /* footer */
 
 footer p, footer .nav-link {
