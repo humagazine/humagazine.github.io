@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
- 
+  color: #0da9b8!important;
 }
 
 /* homepage */
@@ -128,7 +128,7 @@ a:hover {
 /* articles */
 
 .artiCol, .metaCol, #footerBar, .headerCustom, .dropdown-menu, .dropdown-item:hover, .customCol, .coverCustom {
-  background: #f8eadf8e!important;
+  background: #f8eadf8e !important;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
   backdrop-filter: blur( 13px ) !important;
   -webkit-backdrop-filter: blur( 13px ) !important;
@@ -232,6 +232,7 @@ textarea::-webkit-scrollbar {
 button:hover {
   box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #333747;
   background-color: #f8eadf8e !important;
+  color: #0da9b8 !important;
 }
 
 button:active {
@@ -251,9 +252,10 @@ label {
 button {
   border-radius: 50px;
   border-color: transparent !important;
+  background-color: #f8eadf8e !important;
   box-shadow:  20px 20px 30px #dad9d986,
                -10px -10px 30px #ffffff71;
-  }
+}
 
 input, textarea {
   box-shadow:
