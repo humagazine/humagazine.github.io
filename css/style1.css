@@ -502,18 +502,21 @@ hr {
 
 #metaData1, #metaData2, #metaData3 {
   background-image: url(metaFrame1.png);
-  height: 48vh;
+  height: 58vh;
   width: 100%;
-  background-size: 48vh, auto;
+  background-size: 60vh, auto;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #frameData1, #frameData2, #frameData3 {
-   margin: 17vh 4vw 0vh 4vw;
+   margin: 20vh 2vw 0vh 2vw;
    overflow-y: scroll;
    overflow-x: hidden;
    height: 36vh !important;
+   border: 1px solid black;
+   border-radius: 20px;
+   padding: 1vh 2vw 1vh 2vw;
 }
 
 #frameData1 ul, #frameData2 ul, #frameData3 ul {
@@ -531,9 +534,6 @@ hr {
   color: black;
   font-family: Flanker Bold !important;
   background-color: transparent !important;
-}
-
-#frameData1 ul, #frameData2 ul, #frameData3 ul {
 }
 
 .nav-tabs .nav-link:hover {
