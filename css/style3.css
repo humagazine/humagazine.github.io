@@ -111,7 +111,7 @@ a:hover {
   border-bottom: none;
 }
 
-.customCol button, .customCol button:hover, .customCol button:active, footer button, footer button:active, footer button:hover  {
+#mainBody button, #mainBody button:hover, #mainBody button.active, #footer button, #footer button.active, #footer button:hover, #openIssue button, #openIssue button:hover, #openIssue button.active  {
   padding: 20px;
   background-image: url(btn3.png);
   background-size: contain;
@@ -121,16 +121,18 @@ a:hover {
   background-color: transparent !important;
 }
 
-footer button:active, footer button:hover {
+#footer button.active, #footer button:hover, #mainBody button:hover, #mainBody button.active, #openIssue button:hover, #openIssue button.active {
   color: #fb42cc !important;
+  text-decoration: none !important;
 }
 
-.mover { /* sto coso non funziona */
-  height: 10vh;
-  background:url(spac3.png);
-  background-repeat: repeat-x;
-  background-size: contain;
-  background-origin: margin-box;
+#mainBody a:hover, #mainBody a.active, #openIssue a:hover, #openIssue a.active {
+  color: #fb42cc !important;
+  text-decoration: none !important;
+}
+
+#openIssue a {
+ text-decoration: none !important; /* nonfunziona */
 }
 
 .arrow {

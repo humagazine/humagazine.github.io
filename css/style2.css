@@ -61,7 +61,7 @@ body {
   font-family: Optima;
 }
 
-button, #mainMenu li, .dropdown-menu {
+button, #mainMenu li, .dropdown-menu, #mainBody button, .customCol button, #footer button {
   border-color: #FAF8F9 !important;
   border: 2px solid!important;
   color: #FAF8F9 !important;
@@ -76,12 +76,13 @@ button, #mainMenu li, .dropdown-menu {
   margin-bottom: 1vh;
 }
 
-#mainMenu a {
+#mainMenu a, #centralMain a, .customCol a {
   color: #FAF8F9 !important;
 }
 
-button:hover,#mainMenu li:hover, .dropdown-item:hover {
+button:hover,#mainMenu li:hover, .dropdown-item:hover, #mainBody button:hover, #centralMain button:hover, #footer button:hover {
   background: #d4121a !important;
+  border-color: #FAF8F9 !important;
   border-radius: 10px 10px 10px 10px !important;
 }
 
