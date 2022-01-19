@@ -316,7 +316,17 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   color: black !important;
   font-family: Flanker Bold !important;
   background-color: #f6f1e8 !important;
+  padding: 2vh 2vw;
 }
+
+#btnIssue a, .customCol a, #centralMain a {
+  text-decoration: none;
+  color: black;
+}
+
+#btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active {
+  color: white;
+} 
 
 #btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover {
   color: white !important;
