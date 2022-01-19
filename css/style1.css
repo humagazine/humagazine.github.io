@@ -324,14 +324,14 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 .sepLine {
-  display:none;
+  display: none;
 }
 
 .big-first-letter::first-letter {
   font-family: GoudyIni !important;
   font-size: 67.77px;
   float: left;
-  line-height: 1.618em;
+  line-height: 1em;
   padding: 0.05em 0.1em 0 0;
 }
 
@@ -488,7 +488,8 @@ hr {
   border:0;
   margin: 0.5vh;
   height: 6vh;
-  background:url(decor.png);
+  background-image:url(spacestyle1.png);
+  background-size: contain;
 }
 
 
