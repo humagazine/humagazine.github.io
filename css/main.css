@@ -35,19 +35,19 @@ p {
   text-transform: uppercase;
 }
 
-#btnIssue, #footer button, .customCol button, #centralMain button {
+#btnIssue, #footer button, .customCol button, #centralMain button, #openIssue button {
   border: 0.5px solid  rgb(33,37,41) !important;
   border-radius: 20px;
   color: rgb(33,37,41) !important;
   padding: 2vh 2vw;
 }
 
-#btnIssue a, .customCol a, #centralMain a {
-  text-decoration: none;
+#btnIssue a, .customCol a, #centralMain a, #coverstyle1 a {
+  text-decoration: none !important;
   color: rgb(33,37,41)!important;
 }
 
-#btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active {
+#btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active, #openIssue a.active  {
   color:  white !important;
 } 
 

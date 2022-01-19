@@ -229,19 +229,9 @@ textarea::-webkit-scrollbar {
  display: none;
 }
 
-button:hover {
-  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #333747;
-  background-color: #f8eadf8e !important;
-  color: #0da9b8 !important;
-}
-
-button:active {
-  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
-}
-
 #submit {
   display: block;
-  color: #48eefc;
+  color: #48eefc !important;
 }
 
 label {
@@ -249,12 +239,36 @@ label {
   width: 100%;
 }
 
-button {
-  border-radius: 50px;
+button, #btnIssue, #footer button, .customCol button, #centralMain button, #openIssue button, #mainMenu li:hover, .dropdown-item:hover {
+  border-radius: 20px;
+  color: #48eefc !important;
+  border: none !important;
   border-color: transparent !important;
   background-color: #f8eadf8e !important;
   box-shadow:  20px 20px 30px #dad9d986,
                -10px -10px 30px #ffffff71;
+}
+
+#mainBody a, #btnIssue a {
+  color: #48eefc !important;
+  text-decoration: none !important;
+}
+
+#mainBody a:hover, #mainBody a.active, #btnIssue a:hover, #btnIssue a.active {
+  color: #0da9b8  !important;
+}
+
+button:hover, #btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover, #openIssue button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #333747;
+  background-color: #f8eadf8e !important;
+  color: #0da9b8 !important;
+  border: none !important;
+}
+
+button.active, #btnIssue.active, #footer button.active, .customCol button.active, #centralMain button.active, #openIssue button.active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  border: none !important;
+  border-color: transparent !important;
 }
 
 input, textarea {
