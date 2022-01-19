@@ -132,7 +132,7 @@ footer h3 {
 footer form {
   border: 1px solid black;
   background-color: #f6f1e8;
-  padding: 20px !important;
+  padding: 2vh !important;
   border-radius: 10px;
 }
 
@@ -142,7 +142,7 @@ textarea::-webkit-scrollbar {
 
 footer p, footer li {
   background-color: #f6f1e8 !important;
-  padding: 10px;
+  padding: 2vh 2vw;
   border-radius: 10px;
   border: 1px solid black;
 }
@@ -309,14 +309,21 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   color: black;
 }
 
-#btnIssue, .customCol button, #centralMain button {
-  border-radius: 10px;
+#btnIssue, #footer button, .customCol button, #centralMain button {
   border: 1px solid black !important;
+  border-radius: 20px;
+  text-align: center !important;
+  color: black !important;
+  font-family: Flanker Bold !important;
   background-color: #f6f1e8 !important;
-  text-align: center;
-  padding: 18px;
-  text-transform: uppercase !important;
-  color:#B63323;
+}
+
+#btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover {
+  color: white !important;
+  font-family: Flanker Reg !important;
+  border: 1px solid #B63323 !important;
+  border-radius: 20px;
+  background-color: #B63323 !important;
 }
 
 #openIssue {
