@@ -172,12 +172,17 @@ h1 {
   line-height: 1.618em;
 }
 
-h2, h3, #kW {
+h2, h3{
   color: #B63323 !important;
+  font-family: Flanker Reg !important;
   text-transform: uppercase;
   text-align: center;
   font-size: 25.888px;
   line-height: 1.618em;
+}
+
+#kW {
+
 }
 
 body {
@@ -198,7 +203,7 @@ body {
   color: black;
 }
 
-#currentDateTime {
+#currentDateTime, #kW {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none;
