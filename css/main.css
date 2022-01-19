@@ -35,6 +35,29 @@ p {
   text-transform: uppercase;
 }
 
+#btnIssue, #footer button, .customCol button, #centralMain button {
+  border: 0.5px solid  rgb(33,37,41) !important;
+  border-radius: 20px;
+  color: rgb(33,37,41) !important;
+  padding: 2vh 2vw;
+}
+
+#btnIssue a, .customCol a, #centralMain a {
+  text-decoration: none;
+  color: rgb(33,37,41)!important;
+}
+
+#btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active {
+  color:  white !important;
+} 
+
+#btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover {
+  color: white !important;
+  border: 0.5px solid  rgb(33,37,41)!important;
+  border-radius: 20px;
+  background-color: rgb(33,37,41)!important;
+}
+
 /* homepage */
 
 #harvardTest h3, #learnANewWord h3{
@@ -291,8 +314,6 @@ a[year]:hover:after {
   background: transparent;
   pointer-events: none;
 }
-
-
 
 
 
