@@ -292,7 +292,6 @@ a:hover {
   font-size: 18px;
 }
 
-
 .nav-tabs .nav-link.active {
   border-color: transparent !important;
   background-color: transparent !important;
@@ -307,17 +306,21 @@ a:hover {
 #metaData1, #metaData2, #metaData3 {
   background-image: url(tornpaper.png);
   background-position: center;
-  background-size: contain;
+  background-size: 60vh;
   background-repeat: no-repeat;
   background-origin: border-box;
-  height: 38vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #frameData1, #frameData2, #frameData3 {
-  height: 24vh;
+  height: 30vh;
+  padding: 2vh 1vw 2vh 1vw;
   overflow-y: scroll;
-  margin-top: 60px;
 }
+
 
 .articleImg {
   filter: brightness(80%) saturate(139%) contrast(198%);
