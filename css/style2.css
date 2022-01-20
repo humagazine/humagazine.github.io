@@ -273,6 +273,7 @@ iframe{
   padding: 1.6vh 5.5vw 1.6vh 1.3vw;
   border: 3px solid #d4121a;
   border-radius: 20px;
+  margin-bottom: 2vh;
 }
 
 /* space */
@@ -341,7 +342,7 @@ iframe{
  border: 3px solid #d4121a;
  border-radius: 20px;
  background-color: white;
- padding: 1vw;
+ padding: 1vh;
 }
 
 .imgSource {
@@ -355,7 +356,6 @@ aside {
  background-color: white;
  padding: 1vw;
  width: 50%;
- word-wrap: break-word; 
  margin: 2vh 2vw 2vh 0;
 }
 
