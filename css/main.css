@@ -192,15 +192,35 @@ Bigger first letter; ASIDE text */
 }
 
 aside { /* Side notes in the text of the articles */
-  width: 30%;
+  width: 50%;
   text-align: center;
-  margin-right: 15px;
   float: left;
   font-style: italic;
   font-size: larger;
-  border: 1px;
-  border-style: solid none;
+  padding: 1vh 2vw 1vh 1vh;
+  border-right: 1px solid darkgrey;
+  word-wrap: break-word; 
+  margin: 2vh 2vw 2vh 0;
 }
+
+.imgCaption {
+  padding: 1vw;
+ }
+ 
+ .imgSource {
+   margin-bottom: 2vh;
+   text-align: center;
+ }
+
+ .articleImg {
+   margin-bottom: 1vh;
+ }
+
+ aside .imgCaption {
+   border: none;
+   margin: 0;
+ }
+ 
 
 iframe {
   width: 100%;
@@ -295,7 +315,6 @@ a.link-dark {
 #keywordsList {
   border-bottom: 1px solid darkgray;
 }
-
 
 
 /* Ghost years behind style selector */
