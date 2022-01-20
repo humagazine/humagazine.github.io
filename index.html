@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="css/style4.css" media="none" id="cssstyle4">
 
     <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
     <!-- Search by Algolia -->
@@ -63,15 +63,10 @@
     <div class="row align-items-start px-4">
 
       <div class="col">
-        <div class="position-sticky" style="top: 2rem;">
-          <div class="p-4 mb-3 bg-light rounded customCol">
-              <h3 class="fst-italic">Think you’re not biased? Think again</h3>
-              <p class="mb-0"><b>Project Implicit</b> is a non-profit organization committed to advancing scientific knowledge about stereotypes, prejudice, and other group-based biases.</p>
-              <button type="button" class="btn mt-3 btn-outline-dark"><a href=" https://implicit.harvard.edu/implicit/takeatest.html" target="_blank">Take their test now</a></button>
-              <button type="button" class="btn mt-3 btn-outline-dark"><a href="https://www.projectimplicit.net" target="_blank">Learn more about the project</a></button>
-            </div>
-        </div>
-      </div>
+
+        <div id="artPreview1" class="p-4 mb-3 bg-light rounded customCol"></div>
+
+      </div> <!-- End of left col -->
 
       <div id="centralMain" class="col col-md-6">
 
@@ -104,15 +99,15 @@
             </a>
 
           </div>
-          
+
           <div class="col">
             <a class="nav-item nav-link active" href="#" onclick="cleanUpSS()" alt="Clean Up">
               <img id="refreshIcon" class="itemIcon" src="img/btns/refresh.png" width="92" height="92" alt="refresh button">
             </a>
           </div>
-       
+
         </div>
-        
+
         <div class="row row-cols-5 justify-content-center align-items-center px-4">
           <div class="col">
             <div id="a1" class="arrow"></div>
@@ -175,7 +170,7 @@
               <img id="itemIcon3" class="itemIcon" src="img/btns/three.png" width="92" height="92" alt="threefingers">
             </a>
             <div id="a3" class="arrow"></div>
-           
+
             <p class="date">1990</p>
 
           </div>
@@ -184,7 +179,7 @@
               <img id="itemIcon4" class="itemIcon" src="img/btns/four.png" width="92" height="92" alt="fourfingers">
             </a>
             <div id="a4" class="arrow"></div>
-          
+
             <p class="date">2030</p>
 
           </div>
@@ -205,14 +200,25 @@
       </div>
 
       <div class="col">
-        <div class="position-sticky" style="top: 2rem;">
+        <div style="top: 2rem;"> <!-- class="position-sticky" -->
           <div class="p-4 mb-3 bg-light rounded customCol">
             <h3 class="fst-italic">Learn a new word!</h3>
             <strong class="mb-0" id="learnterm">:</strong>  <!-- This div gets filled up with random term from glossaryDb.json -->
             <span class="mb-0" id="learndefinition"></span> <!-- This div gets filled up with correspondent definition from glossaryDb.json -->
           </div>
         </div>
-      </div>
+
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded customCol">
+              <h3 class="fst-italic">Think you’re not biased? Think again</h3>
+              <p class="mb-0"><b>Project Implicit</b> is a non-profit organization committed to advancing scientific knowledge about stereotypes, prejudice, and other group-based biases.</p>
+              <button type="button" class="btn mt-3 btn-outline-dark"><a href=" https://implicit.harvard.edu/implicit/takeatest.html" target="_blank">Take their test now</a></button>
+              <button type="button" class="btn mt-3 btn-outline-dark"><a href="https://www.projectimplicit.net" target="_blank">Learn more about the project</a></button>
+            </div>
+        </div>
+
+
+      </div>   <!-- End of right col -->
 
     </div>
 
@@ -235,22 +241,21 @@
 <!-- Search by Algolia -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script> -->
 
-<!-- Js for current date and time -->
+
 <script>
- var today = new Date();
- var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
- var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
- var day = days[ today.getDay() ];
- var month = months[ today.getMonth() ];
+  // Display current date
+  var today = new Date();
+  var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
- //var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
- //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
- //var dateTime = date+' '+time;
+  var day = days[ today.getDay() ];
+  var month = months[ today.getMonth() ];
 
- var currentDate = day + ", " + month + " " + today.getDate() + ", " + today.getFullYear();
+  var currentDate = day + ", " + month + " " + today.getDate() + ", " + today.getFullYear();
 
- document.getElementById("currentDateTime").value = currentDate;
+  document.getElementById("currentDateTime").value = currentDate;
+
 
   // Random glossary definitions into lateral box
   $.getJSON('./glossaryDb.json', function(objson){
@@ -264,11 +269,11 @@
     //console.log("Get from glossaryDb: an error has occurred.");
   });
 
+
   // Populates the list of keywords on top of page reading keywords from issuesDb.json
   $.getJSON('./issuesDb.json', function(objson){
 
     const kwSet = new Set();
-    //for (i=objson["issues"].length-1; i>=0; i--) {
     for (i=0; i<objson["issues"].length; i++) {
       //console.log("i="+i);
       for (a=1; a<=3; a++) { // Three articles for each magazine issue
@@ -291,6 +296,22 @@
     $("#keywordsList").prepend('<p id="kW" class="p-2 fw-normal text-dark mt-2">Keywords:</p>');
   }).fail(function(){
     console.log("Get from issuesDb: an error has occurred.");
+  });
+
+
+  // Loads article1 preview
+  $.ajax({
+      url: 'articles/article1_1.html',
+      type: 'get',
+      success: function(html) {
+          var trimmed = String(html);
+          trimmed=trimmed.substring(0, 1200);
+          trimmed=trimmed.replace("<h1","<h4");
+          trimmed=trimmed.replace("</h1>","</h4>");
+          trimmed+="...";
+          $("#artPreview1").append(trimmed);
+
+      }
   });
 
 
