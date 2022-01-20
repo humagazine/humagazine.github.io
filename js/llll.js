@@ -46,11 +46,13 @@ function cleanUpSS() {
 
 // Reads the theme status from the cookie and applies it
 function applyCookie() {
-  console.log(document.cookie);
+  //console.log(document.cookie);
   var parts1 = document.cookie.split(';');
-  console.log(parts1);
+  var mycookie = /themestatus/,
+  parts1 = parts1.filter(function(str) {return mycookie.test(str); });
+  //console.log(parts1);
   var parts2 = parts1[0].split('=');
-  console.log(parts2);
+  //console.log(parts2);
   //var parts = parts2[1].split(';');
   var cookieValue=parts2[1];
   if (cookieValue) {
