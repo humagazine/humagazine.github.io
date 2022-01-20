@@ -60,6 +60,7 @@
   background-color: #f6f1e8;
   border: 1px solid black !important;
   border-radius: 50px !important;
+  padding: 5px;
 }
 
 #mainMenu .dropdown-menu {
@@ -179,10 +180,6 @@ h2, h3{
   text-align: center;
   font-size: 25.888px;
   line-height: 1.618em;
-}
-
-#kW {
-
 }
 
 body {
