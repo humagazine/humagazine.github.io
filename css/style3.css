@@ -31,6 +31,10 @@
   color: #fb42cc;
 }
 
+#mainMenu li {
+  font-family: ZineTime !important;
+}
+
 a[year]:hover:after {
   left: 5%;
 }
@@ -117,13 +121,13 @@ a:hover {
 
 
 #mainBody button, #mainBody button:hover, #mainBody button.active, #footer button, #footer button.active, #footer button:hover, #openIssue button, #openIssue button:hover, #openIssue button.active  {
-  padding: 20px;
   background-image: url(btn3.png);
   background-size: contain;
   background-repeat: no-repeat;
   color: black !important;
   border: none !important;
   background-color: transparent !important;
+  height: fit-content;
 }
 
 #footer button.active, #footer button:hover, #mainBody button:hover, #mainBody button.active, #openIssue button:hover, #openIssue button.active {
@@ -168,74 +172,71 @@ a:hover {
   background-color: transparent !important;
 }
 
+#cover1 {
+  background-image: url(tornpaper.png);
+  background-position: center;
+  background-size: 50vh;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#issueMeta {
+  position: absolute;
+}
+
 #art1 {
   background-image: url(bgpaper.png);
   background-position: center;
-  background-size: contain;
+  background-size: 70vh;
   background-repeat: no-repeat;
   background-origin: border-box;
-  height: 35vh;
+  height: 50vh;
   transform: rotate(-4deg);
-  position: relative;
-  padding: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.containerMeta {
+  padding: 0 5vw 0 5vw;
+}
+
 #art2 {
   background-image: url(bgpaper.png);
   background-position: center;
-  background-size: contain;
+  background-size: 70vh;
   background-repeat: no-repeat;
   background-origin: border-box;
-  height: 35vh;
+  height: 50vh;
   transform: rotate(4deg);
-  position: relative;
-  padding: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 #art3 {
   background-image: url(bgpaper.png);
   background-position: center;
-  background-size: contain;
+  background-size: 70vh;
   background-repeat: no-repeat;
   background-origin: border-box;
-  height: 35vh;
+  height: 50vh;
   transform: rotate(-4deg);
-  position: relative;
-  padding: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #coverstyle1 {
   background-image: url(queenel.png), url(grrrlpower.png), url(bikikill.png), url(warning.png), url(dtfyw.png), url(satan.jpg);
   background-repeat: no-repeat;
-  background-size: 50vh, 30vh, 30vh, 30vh, 30vh, 30vh;
+  background-size: 100vh, 60vh, 70vh, 60vh, 30vh, 60vh;
   background-origin: content-box;
   background-position: bottom left, top right, top left, bottom right, center left, center right;
-}
-/*
-  background-image: url(sexpistols.png), url(9.png), url(warning.png), url(security.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: bottom left, top right, center left, bottom right;
-  background-origin: content-box, margin-box, content-box, content-box;
-  background-size: auto, 50vh, 20vh, 20vh;
-}
-*/
-
-#issueMeta p {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-y: clip;
-}
-
-#issueMeta {
-  padding-top: 80px;
-}
-
-#cover1 {
-  background-image: url(tornpaper.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  height: 42vh;
 }
 
 #issueArticles {
