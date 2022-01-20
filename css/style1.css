@@ -267,10 +267,6 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
  background-origin: border-box;
 }
 
-#artMetaDiv {
-  height: 50vh;
-}
-
 .olCustom {
  border-radius: 20px !important;
  border:1px solid black;
@@ -344,7 +340,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 }
 
 #openIssue {
-  margin-top: 20vh;
+  margin-top: 5vh;
 }
 
 /* articles */
