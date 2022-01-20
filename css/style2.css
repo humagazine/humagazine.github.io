@@ -245,12 +245,19 @@ position: sticky !important;
  display: none;
 }
 
-img {
+.mention {
+  color: #d4121a;
+  font-family: Rocket;
+}
+
+.articleImg {
 filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -webkit-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -moz-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -ms-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -o-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
+border: 6px solid #d4121a;
+border-radius: 20px;
 }
 
 iframe{
@@ -262,6 +269,8 @@ iframe{
   width: 100%;
   height: auto;
   padding: 1.6vh 5.5vw 1.6vh 1.3vw;
+  border: 6px solid #d4121a;
+  border-radius: 20px;
 }
 
 /* space */
@@ -316,7 +325,7 @@ iframe{
 
 .wmf-wp-with-preview {
   color: #d4121a !important;
-  font-family: Rockwell !important;
+  font-family: Rocket !important;
   border-bottom: 1px dashed #d4121a !important;
 }
 
