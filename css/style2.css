@@ -1,16 +1,5 @@
 /* Style 2 */
 
-
-@font-face {
-  font-family: "Rockwell";
-  src: url("./fonts/style2/ROCK.TTF");
-}
-
-@font-face {
-  font-family: "Rockwell B";
-  src: url("./fonts/style2/rockb.ttf");
-}
-
 @font-face {
   font-family: "Rocket";
   src: url("./fonts/style2/RocketScript.ttf");
@@ -50,6 +39,11 @@ h1, h2, h3, #kW, .metaTitle {
   color: black;
   text-transform: uppercase;
   text-align: center;
+}
+
+#learnterm, #projectImplicit {
+  font-family: Rocket;
+  color: #d4121a;
 }
 
 body {
