@@ -53,7 +53,6 @@ function applyCookie() {
   //console.log(parts1);
   var parts2 = parts1[0].split('=');
   //console.log(parts2);
-  //var parts = parts2[1].split(';');
   var cookieValue=parts2[1];
   if (cookieValue) {
     var eachVal=cookieValue.split(',');
@@ -66,7 +65,6 @@ function applyCookie() {
 
 
 // Highlights the text corresponding to the selected checkbox with a random color
-// This works both with issue1.html/issue2.html and with single issue.html file
 function showMeta(elementReadId,label,chkbx,metaType) {
 
     // var thisTimeColor = "#" + Math.floor((Math.random() * 15000000) + 777215).toString(16);
@@ -106,13 +104,12 @@ function showMeta(elementReadId,label,chkbx,metaType) {
       $(chkbx).next('label').css("background-color", '');
     }
 
-
 }
 
 
 
 
-// Gets the list of metadata and shows it in the metaData box tabs
+// Gets the list of metadata, orders it and shows it in the metaData box tabs
 // using the NEW SINGLE ISSUE.HTML FILE
 function getMetadataNew(nArticle,metaList) {
 
@@ -120,7 +117,6 @@ function getMetadataNew(nArticle,metaList) {
     var elementReadId = "#article" + suffix;
     var elementMetaTabs = "#tabs" +  suffix;
     var elementTabContent = "#content" + suffix;
-    // var elementMetaData = "#metaData" + suffix;
 
     var ariasel=true;
 
@@ -152,11 +148,8 @@ function getMetadataNew(nArticle,metaList) {
       });
       // console.log(dataListS);
 
-      // var dataListU=[... new Set(dataListS)];
-
       var dataListA  = new Set(dataListS.map(JSON.stringify));  // Passage to Set to keep only unique values
       var dataListU = Array.from(dataListA).map(JSON.parse);    // Back from Set to Array
-
 
       // console.log(dataListU);
 
