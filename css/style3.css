@@ -185,7 +185,7 @@ a:hover {
 }
 
 #issueMeta {
-  position: absolute;
+ padding: 4vh 1vw 0 1vw;
 }
 
 #art1 {
