@@ -108,8 +108,13 @@ a:hover {
 
 .customCol{
   background-color: transparent !important;
-  border-bottom: none;
+  border-bottom: none !important;
 }
+
+#centralMain {
+  border:none !important;
+}
+
 
 #mainBody button, #mainBody button:hover, #mainBody button.active, #footer button, #footer button.active, #footer button:hover, #openIssue button, #openIssue button:hover, #openIssue button.active  {
   padding: 20px;
