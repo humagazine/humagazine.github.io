@@ -46,16 +46,16 @@ function cleanUpSS() {
 
 // Reads the theme status from the cookie and applies it
 function applyCookie() {
-  //console.log(document.cookie);
+  console.log(document.cookie);
   var parts1 = document.cookie.split(';');
-  //console.log(parts1);
+  console.log(parts1);
   var parts2 = parts1[0].split('=');
-  //console.log(parts2);
+  console.log(parts2);
   //var parts = parts2[1].split(';');
   var cookieValue=parts2[1];
   if (cookieValue) {
     var eachVal=cookieValue.split(',');
-    // console.log(eachVal);
+    //console.log(eachVal);
     switchToSS (document.getElementById(eachVal[0]),document.getElementById(eachVal[1]),document.getElementById(eachVal[2]),document.getElementById(eachVal[3]));
   } else {
     cleanUpSS();
