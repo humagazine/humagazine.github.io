@@ -403,12 +403,30 @@ font-family: Flanker Italic !important;
 font-size: 12.8px;
 text-transform: uppercase;
 text-align: center;
+margin-bottom: 2vh;
+   text-align: center;
 }
 
 .imgCaption{
   font-family: Flanker Italic !important;
   font-size: 12.8px;
+  padding: 1vw;
 }
+ 
+aside {
+  border: 1px solid #B63323;
+  border-radius: 20px;
+  padding: 1vw;
+  width: 50%;
+  word-wrap: break-word; 
+  margin: 2vh 2vw 2vh 0;
+ }
+ 
+aside .imgCaption {
+   border: none;
+   margin: 0;
+ }
+
 
 .imgFrame {
 background-image: url(basestyle1.png);

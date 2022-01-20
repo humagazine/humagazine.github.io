@@ -166,12 +166,15 @@ button a {
   overflow-y: clip;
   color: white ;
 }
+
 .metaTitle {
   color: white;
 }
+
 #artN1KW1, #artN2KW1, #artN3KW1, #artN1KW2, #artN2KW2, #artN3KW2, #artN1KW3, #artN2KW3, #artN3KW3 {
   font-family: Rocket !important;
 }
+
 #issueMeta {
 padding-top: 15vh;
 }
@@ -254,8 +257,9 @@ filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -moz-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -ms-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
 -o-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
-border: 6px solid #d4121a;
+border: 3px solid #d4121a;
 border-radius: 20px;
+margin-bottom: 2vh;
 }
 
 iframe{
@@ -267,7 +271,7 @@ iframe{
   width: 100%;
   height: auto;
   padding: 1.6vh 5.5vw 1.6vh 1.3vw;
-  border: 6px solid #d4121a;
+  border: 3px solid #d4121a;
   border-radius: 20px;
 }
 
@@ -325,6 +329,39 @@ iframe{
   color: #d4121a !important;
   font-family: Rocket !important;
   border-bottom: 1px dashed #d4121a !important;
+}
+
+.subtitle {
+  font-family: Rocket;
+  color: #d4121a;
+  text-transform: uppercase;
+}
+
+.imgCaption {
+ border: 3px solid #d4121a;
+ border-radius: 20px;
+ background-color: white;
+ padding: 1vw;
+}
+
+.imgSource {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+aside {
+ border: 3px solid #d4121a;
+ border-radius: 20px;
+ background-color: white;
+ padding: 1vw;
+ width: 50%;
+ word-wrap: break-word; 
+ margin: 2vh 2vw 2vh 0;
+}
+
+aside .imgCaption {
+  border: none;
+  margin: 0;
 }
 
 /* scrollbar */
