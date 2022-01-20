@@ -162,7 +162,7 @@ function getMetadataNew(nArticle,metaList) {
         ariasel='false';
         tabactivetab='';
 
-        mystring='<div class="tab-pane ' + tabactive + '" id="' + metaType + suffix + '" role="tabpanel" aria-labelledby="' + metaType + '-tab' + suffix+'">';
+        mystring='<div class="tab-pane pl-2 ' + tabactive + '" id="' + metaType + suffix + '" role="tabpanel" aria-labelledby="' + metaType + '-tab' + suffix+'">';
         // console.log(mystring);
 
         // Cycles over found elements and shows checkboxes
@@ -187,7 +187,7 @@ function getMetadataNew(nArticle,metaList) {
 
     // Adds ANALYSIS tab and calculates statistics
     $(elementMetaTabs).append('<li class="nav-item waves-effect waves-light" role="presentation"><a class="nav-link" id="analysis-tab' + suffix + '" data-toggle="tab" href="#analysis' + suffix + '" type="button" role="tab" aria-controls="analysis" aria-selected="false">analysis</a></li>');
-    mystring = '<div class="tab-pane ' + tabactive + '" id="analysis' + suffix + '" role="tabpanel" aria-labelledby="analysis' + '-tab' + suffix+'">';
+    mystring = '<div class="tab-pane pl-2 ' + tabactive + '" id="analysis' + suffix + '" role="tabpanel" aria-labelledby="analysis' + '-tab' + suffix+'">';
     // mystring += "Text Analysis:<br/>";
 
     var elementReadTextOnly = $(elementReadId).text();
