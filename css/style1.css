@@ -280,11 +280,10 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 
 #issueMeta p {
   text-align: center;
-  overflow-y: clip;
 }
 
 #issueMeta {
- padding-top: 15vh;
+ padding: 4vh 0 4vh 0;
 }
 
 #cover1 {
@@ -294,6 +293,10 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   background-repeat: no-repeat;
   background-position: bottom, top;
   background-origin: content-box, content-box;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #issueArticles {
