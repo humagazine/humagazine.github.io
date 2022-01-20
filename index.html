@@ -300,15 +300,17 @@
 
 
   // Loads article1 preview
+  var oneortwo=randomIntFromInterval(1, 2);
+  console.log(oneortwo);
   $.ajax({
-      url: 'articles/article1_1.html',
+      url: 'articles/article' + oneortwo + '_1.html',
       type: 'get',
       success: function(html) {
           var trimmed = String(html);
-          trimmed=trimmed.substring(0, 1200);
+          trimmed=trimmed.substring(0, 1225);
           trimmed=trimmed.replace("<h1","<h4");
           trimmed=trimmed.replace("</h1>","</h4>");
-          trimmed+="...";
+          trimmed+=" etc. etc.";
           $("#artPreview1").prepend(trimmed);
 
       }
