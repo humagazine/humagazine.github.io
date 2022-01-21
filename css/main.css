@@ -24,8 +24,13 @@ h1 {
   font-family: Lora Bold;
 }
 
-h2, h3, #kW {
+h2, #kW {
   font-family: Lora SBI;
+}
+
+h3 {
+  font-family: Lora SBI;
+  text-transform: uppercase;
 }
 
 .step {
@@ -487,3 +492,10 @@ a[year]:hover:after {
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* footer */
+
+#teamMate1, #teamMate2 {
+  font-weight: bold !important;
+}
+
