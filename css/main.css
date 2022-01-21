@@ -49,7 +49,7 @@ p {
 
 #btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active, #openIssue a.active  {
   color:  white !important;
-} 
+}
 
 #btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover {
   color: white !important;
@@ -64,7 +64,7 @@ p {
  text-align: center;
 }
 
-#centralMain .itemIcon { 
+#centralMain .itemIcon {
  margin-left: auto;
  margin-right: auto;
 }
@@ -79,6 +79,18 @@ p {
 
 .date {
   text-align: center;
+}
+
+.lastBox {
+  border-bottom: none!important;
+}
+
+.leftCol {
+  border-right: 1px solid darkgray;
+}
+
+.rightCol {
+  border-left: 1px solid darkgray;
 }
 
 /* documentation */
@@ -199,14 +211,14 @@ aside { /* Side notes in the text of the articles */
   font-size: larger;
   padding: 1vh 2vw 1vh 1vh;
   border-right: 1px solid darkgrey;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   margin: 2vh 2vw 2vh 0;
 }
 
 .imgCaption {
   padding: 1vw;
  }
- 
+
  .imgSource {
    margin-bottom: 2vh;
    text-align: center;
@@ -220,7 +232,7 @@ aside { /* Side notes in the text of the articles */
    border: none;
    margin: 0;
  }
- 
+
 
 iframe {
   width: 100%;
@@ -295,8 +307,8 @@ a.link-dark {
 /* Basic Style */
 
 #centralMain {
-  border-left: 1px solid darkgray;
-  border-right: 1px solid darkgray;
+  /*border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;*/
 }
 
 
