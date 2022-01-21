@@ -492,3 +492,10 @@ a[year]:hover:after {
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* footer */
+
+#teamMate1, #teamMate2 {
+  font-weight: bold !important;
+}
+
