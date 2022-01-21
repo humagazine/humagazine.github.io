@@ -28,6 +28,10 @@ h2, h3, #kW {
   font-family: Lora SBI;
 }
 
+.step {
+  font-weight: bold;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -42,10 +46,10 @@ p {
   text-align: justify;
 }
 
-#centralMain h1 {
+#centralMain {
   text-align: center;
-  text-transform: uppercase;
 }
+
 
 #btnIssue, #footer button, .customCol button, #centralMain button, #openIssue button {
   border: 0.5px solid  rgb(33,37,41) !important;
