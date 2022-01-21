@@ -81,6 +81,10 @@ a:hover {
   height: fit-content;
 }
 
+.kwCustom:hover {
+  color: #48eefc;
+}
+
 #currentDateTime {
   background-color: transparent !important;
   border: none;
