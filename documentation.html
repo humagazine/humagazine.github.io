@@ -101,16 +101,16 @@
           <p>Every page include two common elements - the header and the footer - which are loaded from the respective HTML files stored in the <code>/components</code> folder.</p>
           <p>Each issue of the magazine provides:</p>
           <ul style="list-style-type:circle;">
-            <li>a cover containing the name of the editor, the release date and a summary of the contents with complete details about the source of the articles, as well as some identifying keywords;</li>
+            <li>a cover containing the name of the editor, the release date and a summary of the contents with complete details about the source of the articles, as well as some identifying keywords;<br/></li>
             <li>the actual magazine, always made up of 3 articles displayed side by side, and their respective metadata selectors.</li>
           </ul>
 
           <h3 id="list-item-2">Content Management</h3>
-          <p>The contents of the magazines are stored inside these elements, that must always be present in the hosting space of the website:</p>
+          <p>The contents of the magazines are stored inside the following elements, that must always be present in the hosting space of the website:</p>
           <ul style="list-style-type:circle;">
-            <li>The file <code>issuesDb.json</code> in the root directory: it contains a main object having the key "issues", whose value is an array of objects, each with the details of the single issues of the magazine (number, publisher, release date, details on the source of the three articles and 3 keywords each)</li>
+            <li>The file <code>issuesDb.json</code> in the root directory: it contains a main object having the key "issues", whose value is an array of objects, each with the details of the single issues of the magazine (number, publisher, release date, details on the source of the three articles and 3 keywords each)<br/></li>
             <li>The files of the individual articles, stored in the <code>/articles</code> folder, whose names must have this standard syntax:<br/>
-            <code>article[n_rivista]_[n_articolo].html</code> (e.g. "article1_3.html" for the third article of the first issue).<br/>
+            <code>article[n_rivista]_[n_articolo].html</code> (e.g. "article1_3.html" for the third article of the first issue).<br/></li>
             <li>Images and other multimedia contents can be stored in the <code>/img</code> folder and organized into separate subfolders for each article. However, they can be also stored elsewhere or loaded from external URLs.</li>
           </ul>
           <p>The system reads the issuesDb.json file to determine how many magazine issues have been defined, then dynamically arranges the corresponding items in the main menu, along with the covers and the contents while browsing.</p>
@@ -126,8 +126,8 @@
           </ul>
 
           <h3 id="list-item-3">Metadata Selection</h3>
-          <p>Each article has a related Metadata Selector on top. It organizes into distinct tabs the metadata categories as identified inside the content. Each tab lists the words marked in the article body with that category, ordered by the content of the <code>data-sort</code> attribute.</p>
-          <p>By selecting a checkbox, the articles scroll to the first occurrence of the selected data, while every occurrence is highlighted with a random background color. The label of the selected checkbox gets highlighted in the same color. By clearing the checkbox, the text backgrounds become transparent again.</p>
+          <p>Each article has a related Metadata Selector on top. It organizes into distinct tabs the metadata categories as identified inside the content. Each tab lists the words marked in the article body with that category, ordered by the content of the <code>data-sort</code> attribute. In case the <code>data-sort</code> attribute is missing or empty, the platform will use the <code>data-label</code> value for sorting.</p>
+          <p>By selecting a checkbox, the articles scroll to the first occurrence of the selected data, while every occurrence is highlighted with a random background color. The label of the selected checkbox gets highlighted with the same color. By clearing the checkbox, the text backgrounds become transparent again.</p>
           <p>Regardless of the metadata categories used, at the bottom of each Metadata Selector there's a tab called "Analysis" which contains the data described in the next section.</p>
 
           <h3 id="list-item-3">Text Analysis</h3>
@@ -138,13 +138,13 @@
             <li>Sentiment amplitude: The arithmetic mean of the differences between the lowest and the highest sentiment value for each sentence (single word scores range from -5 to +5);</li>
             <li>Politeness: The arithmetic mean of the politeness of each sentence, evaluated on many different features of natural language;</li>
             <li>Dirtiness: The arithmetic mean of the dirtiness of each sentencs, evaluated on many different features of natural language.</li>
-            <li>The list of the first 10 most frequently used words in descending order, and net of the most common stopwords.</li>
+            <li>The list of the first 10 most frequently used words in descending order, net of the most common stopwords.</li>
           </ul>
           <p>The synthetic sentiment, politeness and dirtiness scores are calculated using a third party JavaScript component named <a href="https://github.com/Ulflander/compendium-js" target:"_blank">Compendium JS</a>. The procedure for calculating words frequency and displaying the first ten positions in descending order was entirely written from scratch. The stopwords list is the standard one from the <a href="https://gist.github.com/sebleier/554280" target="_blank">NLTK Library</a>.</p>
 
           <h3 id="list-item-3">Wikipedia Previews</h3>
           <p>Properly tagged parts of text show a preview of the corresponding Wikipedia page when hovering. Names with this feature enabled have the W of the Wikipedia logo at the right end, partially overlaid on the text as a watermark.</p>
-          <p>This function was realized through the JavaScript component <a href="https://github.com/wikimedia/wikipedia-preview" target="_blank">Wikipedia Preview</a>. Active elements have the <code>data-wikipedia-preview</code> boolean attribute and the <code>wmf-wp-with-preview</code> class.</p>
+          <p>This function was realized through the JavaScript component <a href="https://github.com/wikimedia/wikipedia-preview" target="_blank">Wikipedia Preview</a>. Active elements must have the <code>data-wikipedia-preview</code> boolean attribute and the <code>wmf-wp-with-preview</code> class.</p>
 
           <h3>Internal Search Engine</h3>
           <p>Our framework has an internal JavaScript search engine based on <a href="http://lunrjs.com" target="_blank">lunr</a>.</p>
