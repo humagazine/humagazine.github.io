@@ -1,25 +1,37 @@
 /* Main CSS file */
 
-/* Queste righe andavano in errore su tutte le pagine: */
-/* @import docsearch from '@docsearch/js'; */
-/* @import '@docsearch/css';
+@font-face {
+  font-family: "Lora Bold";
+  src: url("./fonts/style0/Lora-Bold.ttf");
+}
 
-#docsearch{
-  container: '#docsearch',
-  appId: 'R2IYF7ETH7',
-  apiKey: '599cec31baffa4868cae4e79f180729b',
-  indexName: 'docsearch',
-};
-*/
+@font-face {
+  font-family: "Lora SBI";
+  src: url("./fonts/style0/Lora-SemiBoldItalic.ttf");
+}
 
-h1, h2, h3, #kW {
-  font-family: 'Playfair Display',serif;
+@font-face {
+  font-family: "Lora Reg";
+  src: url("./fonts/style0/Lora-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lora L";
+  src: url("./fonts/style0/Lora-VariableFont_wght.ttf");
+}
+
+h1 {
+  font-family: Lora Bold;
+}
+
+h2, h3, #kW {
+  font-family: Lora SBI;
 }
 
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: georgia,'times new roman',serif;
+  font-family: Lora L;
 }
 
 body::-webkit-scrollbar {
