@@ -124,7 +124,7 @@ a:hover {
 	}
 }
 
-button, .kwCustom {
+button, .kwCustom, #art1, #art2, #art3 {
   transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
