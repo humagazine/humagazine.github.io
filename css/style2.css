@@ -132,6 +132,14 @@ button a {
   width: 90vw;
 }
 
+.leftCol {
+  border-right: none;
+}
+
+.rightCol {
+  border-left: none;
+}
+
 /* cover issue */
 
 #coverstyle1 {
