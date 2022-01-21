@@ -72,8 +72,8 @@ p {
 
 /* homepage */
 
-#harvardTest h3, #learnANewWord h3{
- text-align: center;
+#centralMain a {
+  text-align: center;
 }
 
 #centralMain .itemIcon {
