@@ -305,7 +305,7 @@ iframe{
 
 .tech-slideshow > div {
   height: 100%;
-  width: 2526px;
+  width: 5928px; /* 2526px */
   background-image: url(bannerstyle2.png);
   background-repeat: no-repeat;
   position: absolute;
