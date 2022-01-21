@@ -103,11 +103,29 @@ a:hover {
   content: url(futarrow.png);
   width: auto;
   height: 8vh;
+  overflow: hidden;
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+/*
 .arrow:hover {
   transform: translateY(-10px);
 }
+*/
 
 /* cover issue */
 
@@ -155,14 +173,14 @@ a:hover {
   border-radius: 20px;
   margin: 1vh;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
 
 /* metadata nav tablist style */
 
-.nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover, .dropdown-item:hover {
+.nav-tabs .nav-link, .dropdown-item:hover {
   border: 0;
-  color: #48eefc;
   border-radius: 20px;
   border-style: none;
   background: rgba(31, 38, 135, 0.199);
@@ -173,8 +191,12 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   height: fit-content;
 }
 
-.nav-tabs .nav-link.active {
-  color: black;
+#tabs1 .nav-link:hover, #tabs2 .nav-link:hover, #tabs3 .nav-link:hover {
+  color: #48eefc !important;
+}
+
+#tabs1 .nav-link.active, #tabs2 .nav-link.active, #tabs3 .nav-link.active{
+  color: black !important;
   border-bottom: 2px solid #48eefc;
   background-color: #48eefc;
 }
@@ -254,6 +276,34 @@ button, #btnIssue, #footer button, .customCol button, #centralMain button, #open
   background-color: #f8eadf8e !important;
   box-shadow:  20px 20px 30px #dad9d986,
                -10px -10px 30px #ffffff71;
+}
+
+hr {
+  background-color: #48eefc !important;
+}
+
+aside {
+  border-radius: 20px;
+  border: none !important;
+  border-color: transparent !important;
+  background-color: #f8eadf8e !important;
+  box-shadow:  20px 20px 30px #dad9d986,
+               -10px -10px 30px #ffffff71;
+}
+
+.imgCaption {
+  border-radius: 20px;
+  border: none !important;
+  border-color: transparent !important;
+  background-color: #f8eadf8e !important;
+  box-shadow:  20px 20px 30px #dad9d986,
+               -10px -10px 30px #ffffff71;
+  margin-top: 1vh;
+}
+
+aside .imgCaption {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 #mainBody a, #btnIssue a {
