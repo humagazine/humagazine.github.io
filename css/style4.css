@@ -277,13 +277,17 @@ button, #btnIssue, #footer button, .customCol button, #centralMain button, #open
   color: #48eefc !important;
   border: none !important;
   border-color: transparent !important;
-  background-color: #f8eadf8e !important;
-  box-shadow:  20px 20px 30px #dad9d986,
+  background-color: #f8eadfc4 !important;
+  box-shadow:  10px 10px 30px #dad9d986,
                -10px -10px 30px #ffffff71;
 }
 
 hr {
-  background-color: #48eefc !important;
+  background-color: #48eefc;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px #48eefc;
+  -moz-box-shadow: 0px 0px 10px #48eefc;
+  box-shadow: 0px 0px 10px #48eefc;
 }
 
 aside {
