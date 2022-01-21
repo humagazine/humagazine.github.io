@@ -46,10 +46,6 @@ p {
   text-align: justify;
 }
 
-#centralMain {
-  text-align: center;
-}
-
 
 #btnIssue, #footer button, .customCol button, #centralMain button, #openIssue button {
   border: 0.5px solid  rgb(33,37,41) !important;
@@ -75,6 +71,10 @@ p {
 }
 
 /* homepage */
+
+#centralMain {
+  text-align: center;
+}
 
 #centralMain a {
   text-align: center;
@@ -103,10 +103,12 @@ p {
 
 .leftCol {
   border-right: 1px solid darkgray;
+  text-align: center;
 }
 
 .rightCol {
   border-left: 1px solid darkgray;
+  text-align: center;
 }
 
 /* documentation */
