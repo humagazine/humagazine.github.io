@@ -246,6 +246,14 @@ position: sticky !important;
  display: none;
 }
 
+th {
+  background-color: #d4121a !important;
+  color: white;
+}
+
+tr:nth-child(odd){background-color: white !important}
+tr:nth-child(even){background-color: #db5550}
+
 .mention {
   color: #d4121a;
   font-family: Rocket;
