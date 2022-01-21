@@ -223,11 +223,20 @@ body {
   background-origin: border-box, border-box  !important;
   padding-top: 20vh !important;
   padding-bottom: 20vh !important;
+  border-bottom: 1px solid black;
 }
 
-#centralMain {
-  border-left: 1px solid black;
+.leftCol {
   border-right: 1px solid black;
+  border-bottom: none !important;
+}
+
+.rightCol {
+  border-left: 1px solid black;
+  border-bottom: none !important;
+}
+.lastBox {
+  border: none !important;
 }
 
 #keywordsList {
@@ -238,14 +247,6 @@ body {
   content: url(arrow1.png);
   width: auto;
   height: 8vh;
-}
-
-.leftCol {
-  border-right: none;
-}
-
-.rightCol {
-  border-left: none;
 }
 
 /* documentatin pg */
@@ -337,7 +338,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 #btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active {
   color: white !important;
   text-align: center !important;
-}
+} 
 
 #btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover {
   color: white !important;
@@ -420,7 +421,7 @@ margin-bottom: 2vh;
   font-size: 12.8px;
   padding: 1vw;
 }
-
+ 
 aside {
   border: 1px solid #B63323;
   border-radius: 20px;
@@ -428,7 +429,7 @@ aside {
   width: 50%;
   margin: 2vh 2vw 2vh 0;
  }
-
+ 
 aside .imgCaption {
    border: none;
    margin: 0;
