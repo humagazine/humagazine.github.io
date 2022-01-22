@@ -33,6 +33,12 @@ h3 {
   text-transform: uppercase;
 }
 
+h6, h6:hover, h6 a {
+  font-family: Lora Bold;
+  color: black!important;
+  text-decoration:none;
+}
+
 #currentDateTime {
   border:none;
   font-family: Lora SBI;
@@ -141,7 +147,7 @@ p {
 #issueMeta p{
   text-align: center;
 }
- 
+
 #btnIssue {
   text-decoration-line: none !important;
 }
@@ -370,6 +376,12 @@ a.link-dark {
   background-color:transparent!important;
 }
 
+.customPreview {
+  border-bottom: 1px solid darkgray;
+  border-radius:0!important;
+  background-color:transparent!important;
+}
+
 
 #keywordsList {
   border-bottom: 1px solid darkgray;
@@ -522,4 +534,3 @@ a[year]:hover:after {
 #teamMate1, #teamMate2 {
   font-weight: bold !important;
 }
-
