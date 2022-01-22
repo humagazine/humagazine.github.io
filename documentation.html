@@ -45,8 +45,15 @@
       <div id="docSx" class="col col-md-3">
         <div class="position-sticky" style="top: 2rem;">
           <div id="list-example" class="list-group list-group-flush sticky">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">The LLLL framwork</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">hUmagazine</a>
+            <a class="list-group-item list-group-item-action" href="#framework">LLLL The Framwork</a>
+            <a class="list-group-item list-group-item-action" href="#contentManagement">Content Management</a>
+            <a class="list-group-item list-group-item-action" href="#markup">Markup</a>
+            <a class="list-group-item list-group-item-action" href="#metadataSelection">Metadata Selection</a>
+            <a class="list-group-item list-group-item-action" href="#textAnalysis">Text Analysis</a>
+            <a class="list-group-item list-group-item-action" href="#wikipediaPreviews">Wikipedia Previews</a>
+            <a class="list-group-item list-group-item-action" href="#searchEngine">Search Engine</a>
+            <a class="list-group-item list-group-item-action" href="#messageForm">Message Form</a>
+            <a class="list-group-item list-group-item-action" href="#hUmagazine">hUmagazine</a>
             <a class="list-group-item list-group-item-action" href="#list-item-3">Theme 1</a>
             <a class="list-group-item list-group-item-action" href="#list-item-4">Theme 2</a>
             <a class="list-group-item list-group-item-action" href="#list-item-5">Theme 3</a>
@@ -65,30 +72,30 @@
           <p>The portal can be viewed according to 4 typographic styles (5 considering the initial neutral style), each referring to a different period as described on the home page.</p>
           <p>Each issue of the magazine shows the articles side by side on the same web page and allows for a comparative analysis of the available metadata.</p>
 
-          <h2 id="list-item-1">LLLL The Framework</h2>
+          <h2 id="framework">LLLL The Framework</h2>
 
           <p>Our LLLL framework allows the management of any number of magazine issues, each containing 3 articles displayed simultaneously in 3 columns side by side.</p>
           <p>Specific markups within articles enable the use of Metadata Selectors, while a basic textual analysis is always automatically processed regardless of the inserted tags.</p>
-          <p>Every page include two common elements - the header and the footer - which are loaded from the respective HTML files stored in the <code>/components</code> folder.</p>
+          <p>Every page includes two common elements - the header and the footer - loaded from the respective HTML files stored in the <code>/components</code> folder.</p>
           <p>Each issue of the magazine provides:</p>
           <ul style="list-style-type:circle;">
-            <li>a cover containing the name of the editor, the release date and a summary of the contents with complete details about the source of the articles, as well as some identifying keywords;<br/></li>
-            <li>the actual magazine, always made up of 3 articles displayed side by side, and their respective metadata selectors.</li>
+            <li>a cover containing the name of the editor, release date, and a summary of contents with complete details about the source of the articles, as well as some identifying keywords;<br/></li>
+            <li>the actual magazine, always made up of 3 articles displayed side by side and their respective metadata selectors.</li>
           </ul>
 
-          <h3 id="list-item-2">Content Management</h3>
-          <p>The contents of the magazines are stored inside the following elements, that must always be present in the hosting space of the website:</p>
+          <h2 id="contentManagement">Content Management</h2>
+          <p>The contents of magazines are stored inside the following elements, that must always be present in the hosting space of the website:</p>
           <ul style="list-style-type:circle;">
             <li>The file <code>issuesDb.json</code> in the root directory: it contains a main object having the key "issues", whose value is an array of objects, each with the details of the single issues of the magazine (number, publisher, release date, details on the source of the three articles and 3 keywords each)<br/></li>
             <li>The files of the individual articles, stored in the <code>/articles</code> folder, whose names must have this standard syntax:<br/>
             <code>article[n_magazine]_[n_article].html</code> (e.g. "article1_3.html" for the third article of the first issue).<br/></li>
-            <li>Images and other multimedia contents can be stored in the <code>/img</code> folder and organized into separate subfolders for each article. However, they can be also stored elsewhere or loaded from external URLs.</li>
+            <li>Images and other multimedia contents can be stored in the <code>/img</code> folder and organized into separate subfolders for each article. However, they can also be stored elsewhere or loaded from external URLs.</li>
           </ul>
           <p>Very important for the correct display of the articles' previews on the home page are the ids assigned to the title, the subtitle, the author and the main image inside the article. The expected ids are respectively <code>title[n_magazine]_[n_article]</code>, <code>subtitle[n_magazine]_[n_article]</code>, <code>byline[n_magazine]_[n_article]</code>, and <code>img[n_magazine]_[n_article]</code></p>
-          <p>The system reads also the issuesDb.json file to determine how many magazine issues have been defined, then dynamically arranges the corresponding items in the main menu, along with the covers and the contents while browsing.</p>
+          <p>The system also reads the issuesDb.json file to determine how many magazine issues have been defined, then dynamically arranges the corresponding items in the main menu, along with the covers and the contents while browsing.</p>
 
 
-          <h3 id="list-item-3">Markup</h3>
+          <h2 id="markup">Markup</h2>
           <p>The articles were tagged with significant metadata using <code>data-*</code> attributes, that give us the ability to embed custom data inside HTML elements and avoid Ajax calls or server-side database queries.</p>
           <p>Each tag contains the following attributes (required for the selector to work properly):</p>
           <ul>
@@ -99,12 +106,12 @@
           <p>We also put the expected ids inside the main elements of the articles as described in the previous paragraph, to display previews in the left column of the home page.</p>
 
 
-          <h3 id="list-item-3">Metadata Selection</h3>
+          <h2 id="metadataSelection">Metadata Selection</h2>
           <p>Each article has a related Metadata Selector on top. It organizes into distinct tabs the metadata categories as identified inside the content. Each tab lists the words marked in the article body with that category, ordered by the content of the <code>data-sort</code> attribute. In case the <code>data-sort</code> attribute is missing or empty, the platform will use the <code>data-label</code> value for sorting.</p>
           <p>By selecting a checkbox, the articles scroll to the first occurrence of the selected data, while every occurrence is highlighted with a random background color. The label of the selected checkbox gets highlighted with the same color. By clearing the checkbox, the text backgrounds become transparent again.</p>
           <p>Regardless of the metadata categories used, at the bottom of each Metadata Selector there's a tab called "Analysis" which contains the data described in the next section.</p>
 
-          <h3 id="list-item-3">Text Analysis</h3>
+          <h2 id="textAnalysis">Text Analysis</h2>
           <p>When each article is loaded into the framework, a statistical analysis of the text is performed which returns the following information:</p>
           <ul>
             <li>Total words, words average length and number of sentences identified;</li>
@@ -116,19 +123,19 @@
           </ul>
           <p>The synthetic sentiment, politeness and dirtiness scores are calculated using a third party JavaScript component named <a href="https://github.com/Ulflander/compendium-js" target:"_blank">Compendium JS</a>. The procedure for calculating words frequency and displaying the first ten positions in descending order was entirely written from scratch. The stopwords list is the standard one from the <a href="https://gist.github.com/sebleier/554280" target="_blank">NLTK Library</a>.</p>
 
-          <h3 id="list-item-3">Wikipedia Previews</h3>
+          <h2 id="wikipediaPreviews">Wikipedia Previews</h2>
           <p>Properly tagged parts of text show a preview of the corresponding Wikipedia page when hovering. Names with this feature enabled have the W of the Wikipedia logo at the right end, partially overlaid on the text as a watermark.</p>
           <p>This function was realized through the JavaScript component <a href="https://github.com/wikimedia/wikipedia-preview" target="_blank">Wikipedia Preview</a>. Active elements must have the <code>data-wikipedia-preview</code> boolean attribute and the <code>wmf-wp-with-preview</code> class.</p>
 
-          <h3>Internal Search Engine</h3>
+          <h2 id="searchEngine">Internal Search Engine</h2>
           <p>Our framework has an internal JavaScript search engine based on <a href="http://lunrjs.com" target="_blank">lunr</a>.</p>
           <p>Being it part of the header, the search field is available on every page of the website. After inserting the words to be found, it looks for them inside the articles (it doesn't look inside static pages), then it returns the list and a short preview of the articles where the words have been found. Clicking on a result, it opens the issue containing that article.</p>
 
-          <h3>Message Form</h3>
+          <h2 id="messageForm">Message Form</h2>
           <p>At the bottom right of the footer, there is a contact form to send ideas, proposals, considerations of any kind about hUmagazine. By submitting the form, an email is sent to the webmasters with the sender's email address and the message.</p>
           <p>This function is based on the <a href="https://smtpjs.com/" target="_blank">SmtpJS.com</a> component. Sending takes place via the smtp.gmail.com server using an ad hoc account.</p>
           <hr/>
-          <h2 id="list-item-4">hUmagazine</h2>
+          <h2 id="hUmagazine">hUmagazine</h2>
           <p>As previously explained, the resource stays faithful to its contents also on a graphic level. The four styles chosen for the different visualizations of the magazine stop precise historical moments in the evolution of this kind of topics.</p>
           <p>The first style harks back to the <b>Renaissance</b> prints and taste, especially looking at Aldo Manuzio’s productions. Marking the real beginning of the publishing industry, the 16th century was a period of great innovations albeit characterized by immense gender disparities.</p>
           <p>The second one reproduces the unique style of the <b>1950s</b>, with their bold colors and captivating images. In fact, thanks to the postwar economic boom, the publishing industry lived a true dream decade. However, despite its patinated look, most of the iconic 50s magazines and advertisements massively contributed to the stigmatization of gender stereotypes whenever it might be helpful in targeting different demographics.</p>
