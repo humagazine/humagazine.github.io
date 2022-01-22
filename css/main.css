@@ -48,6 +48,10 @@ body {
   font-family: Lora L;
 }
 
+#mainMenu li {
+  font-family: Lora L;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -112,12 +116,10 @@ p {
 
 .leftCol {
   border-right: 1px solid darkgray;
-  text-align: center;
 }
 
 .rightCol {
   border-left: 1px solid darkgray;
-  text-align: center;
 }
 
 /* documentation */
