@@ -195,6 +195,10 @@ header button {
   border-bottom: 1px dashed #d235ff !important;
 }
 
+.mention {
+  color: #d235ff !important;
+}
+
 .articleImg {
   border-radius: 20px;
   margin: 1vh;
