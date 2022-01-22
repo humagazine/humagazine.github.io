@@ -67,6 +67,7 @@
           <div id="contentPre1_1" class="col">
             <h6 id="titlePre1_1"></h6>
             <div id="subPre1_1"></div>
+            <div id="byPre1_1"></div>
           </div>
         </div>
 
@@ -76,6 +77,7 @@
           <div id="contentPre1_2" class="col">
             <h6 id="titlePre1_2"></h6>
             <div id="subPre1_2"></div>
+            <div id="byPre1_2"></div>
           </div>
         </div>
 
@@ -85,6 +87,7 @@
           <div id="contentPre1_3" class="col">
             <h6 id="titlePre1_3"></h6>
             <div id="subPre1_3"></div>
+            <div id="byPre1_3"></div>
           </div>
         </div>
 
@@ -94,6 +97,7 @@
           <div id="contentPre2_1" class="col">
             <h6 id="titlePre2_1"></h6>
             <div id="subPre2_1"></div>
+            <div id="byPre2_1"></div>
           </div>
         </div>
 
@@ -103,6 +107,7 @@
           <div id="contentPre2_2" class="col">
             <h6 id="titlePre2_2"></h6>
             <div id="subPre2_2"></div>
+            <div id="byPre2_2"></div>
           </div>
         </div>
 
@@ -112,6 +117,7 @@
           <div id="contentPre2_3" class="col">
             <h6 id="titlePre2_3"></h6>
             <div id="subPre2_3"></div>
+            <div id="byPre2_3"></div>
           </div>
         </div>
 
@@ -316,7 +322,6 @@
 
 
   // Load articles preview
-
   $.ajax({
       url: 'articles/article1_1.html',
       type: 'get',
@@ -366,11 +371,9 @@
   });
 
   function getPreData(html,i,a) {
+
     var trimmed = String(html);
     trimmed=trimmed.substring(0, 1225);
-    trimmed=trimmed.replace("<h1","<h4");
-    trimmed=trimmed.replace("</h1>","</h4>");
-    trimmed+=" etc. etc.";
     //console.log(trimmed);
     $("#artPreview"+i+"_"+a).prepend(trimmed);
 
@@ -378,15 +381,13 @@
     var closelinktag="</a>";
     var imgtag="<img src=\"" + $("#img"+i+"_"+a).attr("src") + "\" width=\"100%\">";
     var titletext=$("#title"+i+"_"+a).text();
+    var byline=$("#byline"+i+"_"+a).text();
     //console.log(linktag + imgtag + closelinktag);
-    $("#imgPre"+i+"_"+a).prepend(linktag + imgtag + closelinktag);
+    $("#imgPre"+i+"_"+a).append(linktag + imgtag + closelinktag);
     $("#titlePre"+i+"_"+a).append(linktag + titletext + closelinktag);
+    $("#byPre"+i+"_"+a).append(byline);
+
   }
-
-
-
-//    }
-//  }
 
 
 </script>

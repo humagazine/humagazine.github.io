@@ -415,8 +415,13 @@ a.link-dark {
 
 .customPreview {
   border-bottom: 1px solid darkgray;
-  border-radius:0!important;
-  background-color:transparent!important;
+  border-radius: 0!important;
+  background-color: transparent!important;
+}
+
+.customPreview a {
+  text-decoration: none;
+  color: darkgray;
 }
 
 
