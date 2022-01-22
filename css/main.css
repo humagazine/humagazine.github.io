@@ -131,6 +131,10 @@ p {
   text-align: center !important;
 }
 
+#btnIssue {
+  text-decoration-line: none !important;
+}
+
 /* Article columns */
 .artiCol {
     height: 66vh;
