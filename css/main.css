@@ -33,12 +33,6 @@ h3 {
   text-transform: uppercase;
 }
 
-h6, h6:hover, h6 a {
-  font-family: Lora Bold;
-  color: black!important;
-  text-decoration:none;
-}
-
 #currentDateTime {
   border:none;
   font-family: Lora SBI;
@@ -130,6 +124,12 @@ hr {
 
 .rightCol {
   border-left: 1px solid darkgray;
+}
+
+h6, h6:hover, h6 a {
+  font-weight:700;
+  color: black!important;
+  text-decoration:none;
 }
 
 /* documentation */
