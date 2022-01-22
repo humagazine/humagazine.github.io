@@ -138,6 +138,11 @@ p {
     overflow-x: hidden;
 }
 
+.mention {
+  color: #007bff;
+}
+
+
 /* Metadata columns */
 
 .metaCol {
@@ -150,8 +155,12 @@ p {
   font-weight: 700;
 }
 
+#tabs1 a:hover, #tabs2 a:hover, #tabs3 a:hover, #tabs1 a.active, #tabs2 a.active, #tabs3 a.active {
+  background-color: #f8f9fa;
+}
+
 .sepLine {
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1px solid #dee2e6;
   margin-right:20px;
   margin-left:10px;
 }
@@ -233,7 +242,7 @@ aside { /* Side notes in the text of the articles */
   font-style: italic;
   font-size: larger;
   padding: 1vh 2vw 1vh 1vh;
-  border-right: 1px solid darkgrey;
+  border-right: 1px solid #dee2e6;
   word-wrap: break-word;
   margin: 2vh 2vw 2vh 0;
 }
