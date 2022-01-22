@@ -485,6 +485,10 @@ li.artiCol {
  list-style: square !important;
 }
 
+.artiCol {
+  text-align: left !important;
+}
+
 .articleImg {
 filter: grayscale(90%);
 -webkit-filter: grayscale(90%);
@@ -494,35 +498,29 @@ filter: grayscale(90%);
 margin-bottom: 0;
 }
 
-.author {
-  color: #f6f1e8;
-  background-color: gray;
+.author, .endTags {
   font-family: Flanker Italic !important;
 }
 
-.endTags {
-  color: #f6f1e8;
-  background-color: gray;
-}
-
 .lastPar{
-  height: 180vh !important;
+  height: 100vh !important;
 }
 
 #rl1_1,#rr1_1 {
   width: 45% !important;
-  height: 180vh !important;
+  height: 10vh !important;
 }
 
 #rl1_2,#rr1_2 {
   width: 45% !important;
-  height: 150vh !important;
+  height: 10vh !important;
 }
 
 #rl1_3, #rr1_3 {
   width: 45% !important;
-  height: 120vh !important;
+  height: 10vh !important;
 }
+
 .endSx {
   -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
   shape-outside: polygon(0 0, 100% 100%, 0 100%);
