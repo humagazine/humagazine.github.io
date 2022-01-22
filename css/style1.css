@@ -362,6 +362,10 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   display: none;
 }
 
+.mention {
+  color: #B63323 !important;
+}
+
 .big-first-letter::first-letter {
   font-family: GoudyIni !important;
   font-size: 67.77px;
