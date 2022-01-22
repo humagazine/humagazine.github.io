@@ -244,6 +244,15 @@ header button {
   border-bottom: transparent;
 }
 
+.tab-pane, .tab-pane label {
+  line-height: 0.8;
+  margin-bottom: 0rem;
+}
+
+#analysis1, #analysis2, #analysis3 {
+  line-height: 1.5;
+}
+
 /* scrollbar */
 
 #article1::-webkit-scrollbar-track,#article2::-webkit-scrollbar-track, #article3::-webkit-scrollbar-track, #metaData1::-webkit-scrollbar-track, #metaData2::-webkit-scrollbar-track, #metaData3::-webkit-scrollbar-track {
