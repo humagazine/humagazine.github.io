@@ -341,11 +341,25 @@ aside {
   box-shadow:  20px 20px 30px #dad9d986,
                -10px -10px 30px #ffffff71;
   margin-top: 1vh;
+  font-family: Antikor Reg;
 }
 
 aside .imgCaption {
   background-color: transparent !important;
   box-shadow: none !important;
+  font-family: Antikor Reg;
+}
+
+ .imgSource {
+   font-family: Antikor Reg;
+ }
+
+ .articleImg {
+   margin-bottom: 1vh;
+ }
+
+.byline, .publicationDate {
+  font-family: Antikor Reg;
 }
 
 #mainBody a, #btnIssue a {
