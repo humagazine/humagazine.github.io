@@ -42,8 +42,8 @@ h1, h2, h3, #kW, .metaTitle {
 }
 
 #learnterm, #projectImplicit {
-  font-family: Rocket;
-  color: #d4121a;
+  font-family: Rocket !important;
+  color: #d4121a !important;
 }
 
 body {
@@ -85,7 +85,7 @@ button a {
 }
 
 .customCol {
-  border: solid;
+  border: solid !important;
   background-color: white !important;
   border-radius: 10px !important;
   border-color: #db5550 !important;
