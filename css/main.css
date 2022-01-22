@@ -127,7 +127,7 @@ hr {
 }
 
 h6, h6:hover, h6 a {
-  font-family: Lora Bold;
+  font-weight:700;
   color: black!important;
   text-decoration:none;
 }
