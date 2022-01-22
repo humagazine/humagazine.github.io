@@ -140,6 +140,13 @@ button a {
   border-left: none;
 }
 
+.customPreview {
+  border: 3px solid #d4121a !important;
+  border-radius: 20px !important;
+  background-color: white !important;
+  margin-bottom: 2vh;
+}
+
 /* cover issue */
 
 #coverstyle1 {
@@ -273,11 +280,11 @@ tr:nth-child(even){background-color: #db5550}
 }
 
 .articleImg {
-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
--webkit-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
--moz-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
--ms-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
--o-filter: grayscale(6%) brightness(85%) saturate(216%) contrast(55%);
+filter: brightness(110%) saturate(216%) contrast(55%);
+-webkit-filter: brightness(110%) saturate(216%) contrast(55%);
+-moz-filter:  brightness(110%) saturate(216%) contrast(55%);
+-ms-filter:  brightness(110%) saturate(216%) contrast(55%);
+-o-filter: brightness(110%) saturate(216%) contrast(55%);
 border: 3px solid #d4121a;
 border-radius: 20px;
 margin-bottom: 2vh;

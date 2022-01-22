@@ -508,38 +508,32 @@ margin-bottom: 0;
 }
 
 .lastPar{
-  height: 100vh !important;
+  height: 100vh;
+  background: transparent;
+  max-width: 100vh;
+  position: relative;
 }
 
-#rl1_1,#rr1_1 {
-  width: 45% !important;
-  height: 10vh !important;
+.lastPar [class*=shape] {
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  shape-outside: var(--p);
+  clip-path: var(--p);
 }
 
-#rl1_2,#rr1_2 {
-  width: 45% !important;
-  height: 10vh !important;
-}
-
-#rl1_3, #rr1_3 {
-  width: 45% !important;
-  height: 10vh !important;
-}
-
-.endSx {
-  -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
-  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+.left-shape {
+  --p: polygon(0% 0%, 0% 100%, 100% 100%);
   float: left;
-  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
-.endDx {
-  -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
-    shape-outside: polygon(100% 0, 100% 100%, 0 100%);
-    float: right;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+.right-shape {
+  --p: polygon(0% 100%, 100% 100%, 100% 0%);
+  float: right;
+}
+
+.lastPar p {
+  position: relative;
 }
 
 hr {
