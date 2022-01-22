@@ -121,6 +121,9 @@ a:hover {
   border: none !important;
 }
 
+#artPre1_1,#artPre1_2, #artPre1_3, #artPre2_1, #artPre2_2,#artPre2_3 {
+  border-bottom: none !important;
+}
 
 #mainBody button, #mainBody button:hover, #mainBody button.active, #footer button, #footer button.active, #footer button:hover, #openIssue button, #openIssue button:hover, #openIssue button.active  {
   background-image: url(btn3.png);
@@ -349,13 +352,17 @@ aside .imgCaption, .byline, .publicationDate, .imgCaption, .imgSource {
   overflow-y: scroll;
 }
 
-hr, .mover {
+hr, .mover, #hr {
   border:0 !important;
   margin: 0.5vh !important;
   height: 1vh !important;
   background-image: url(border3.png) !important;  
   background-size: contain !important;
   background-color: transparent !important;
+}
+
+#centralMain hr {
+  display: none;
 }
 
 .articleImg {

@@ -253,6 +253,10 @@ body {
   padding-bottom: 0px;
 }
 
+#artPre1_1,#artPre1_2, #artPre1_3, #artPre2_1, #artPre2_2 {
+  border-bottom: 1px solid black !important;
+}
+
 /* documentatin pg */
 
 #documentationMain {
