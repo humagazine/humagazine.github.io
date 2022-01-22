@@ -59,15 +59,63 @@
 
     <div class="row align-items-start px-4">
 
+      <!-- Column with article previews -->
       <div class="col leftCol">
-        <div id="artPreview1" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre1" class="row">
-          <div id="imgPre1" class="col col-md-5"></div>
-          <div id="contentPre1" class="col">
-            <div id="titlePre1"></div>
-            <div id="subPre1"></div>
+        <div id="artPreview1_1" style="display:none"></div> <!-- Hidden div only needed to store data -->
+        <div id="artPre1_1" class="row">
+          <div id="imgPre1_1" class="col col-md-5"></div>
+          <div id="contentPre1_1" class="col">
+            <div id="titlePre1_1"></div>
+            <div id="subPre1_1"></div>
           </div>
         </div>
+
+        <div id="artPreview1_2" style="display:none"></div> <!-- Hidden div only needed to store data -->
+        <div id="artPre1_2" class="row">
+          <div id="imgPre1_2" class="col col-md-5"></div>
+          <div id="contentPre1_2" class="col">
+            <div id="titlePre1_2"></div>
+            <div id="subPre1_2"></div>
+          </div>
+        </div>
+
+        <div id="artPreview1_3" style="display:none"></div> <!-- Hidden div only needed to store data -->
+        <div id="artPre1_3" class="row">
+          <div id="imgPre1_3" class="col col-md-5"></div>
+          <div id="contentPre1_3" class="col">
+            <div id="titlePre1_3"></div>
+            <div id="subPre1_3"></div>
+          </div>
+        </div>
+
+        <div id="artPreview2_1" style="display:none"></div> <!-- Hidden div only needed to store data -->
+        <div id="artPre2_1" class="row">
+          <div id="imgPre2_1" class="col col-md-5"></div>
+          <div id="contentPre2_1" class="col">
+            <div id="titlePre2_1"></div>
+            <div id="subPre2_1"></div>
+          </div>
+        </div>
+
+        <div id="artPreview2_2" style="display:none"></div> <!-- Hidden div only needed to store data -->
+        <div id="artPre2_2" class="row">
+          <div id="imgPre2_2" class="col col-md-5"></div>
+          <div id="contentPre2_2" class="col">
+            <div id="titlePre2_2"></div>
+            <div id="subPre2_2"></div>
+          </div>
+        </div>
+
+        <div id="artPreview2_3" style="display:none"></div> <!-- Hidden div only needed to store data -->
+        <div id="artPre2_3" class="row">
+          <div id="imgPre2_3" class="col col-md-5"></div>
+          <div id="contentPre2_3" class="col">
+            <div id="titlePre2_3"></div>
+            <div id="subPre2_3"></div>
+          </div>
+        </div>
+
+
         <!-- <div id="artPreview1" class="p-4 mb-3 bg-light rounded customCol lastBox"><button type="button" class="btn mt-3 btn-outline-dark"><a href="https://humagazine.github.io/issue.html?number=1">Read issue</a></button></div> -->
 
       </div> <!-- End of left col -->
@@ -270,26 +318,46 @@
   // Loads article1 preview
   //var oneortwo=randomIntFromInterval(1, 2);
   //var oneortwo=2;
-  var cntr=2;
-  console.log(cntr);
-  $.ajax({
-      url: 'articles/article' + cntr + '_1.html',
-      type: 'get',
-      success: function(html) {
-          var trimmed = String(html);
-          trimmed=trimmed.substring(0, 1225);
-          trimmed=trimmed.replace("<h1","<h4");
-          trimmed=trimmed.replace("</h1>","</h4>");
-          trimmed+=" etc. etc.";
-          $("#artPreview1").prepend(trimmed);
+  //console.log(cntr);
 
-          imgtag="<img src=\"" + $("#img"+cntr+"_1").attr("src") + "\" width=\"100%\">";
-          $("#imgPre1").prepend(imgtag);
-          $("#titlePre1").prepend($("#title"+cntr+"_1").text());
+  //for (i=1; i<=2; i++) {
 
+  //  for (a=1; a<=3; a++) {
 
+      $.ajax({
+          url: 'articles/article1_1.html',
+          type: 'get',
+          success: function(html) {
+              getPreData(html,1,1);
+          }
+      });
+
+      $.ajax({
+          url: 'articles/article2_1.html',
+          type: 'get',
+          success: function(html) {
+              getPreData(html,2,1);
+          }
+      });
+
+      function getPreData(html,i,a) {
+        var trimmed = String(html);
+        trimmed=trimmed.substring(0, 1225);
+        trimmed=trimmed.replace("<h1","<h4");
+        trimmed=trimmed.replace("</h1>","</h4>");
+        trimmed+=" etc. etc.";
+        console.log(trimmed);
+        $("#artPreview"+i+"_"+a).prepend(trimmed);
+
+        imgtag="<img src=\"" + $("#img"+i+"_"+a).attr("src") + "\" width=\"100%\">";
+        $("#imgPre"+i+"_"+a).prepend(imgtag);
+        $("#titlePre"+i+"_"+a).prepend($("#title"+i+"_"+a).text());
       }
-  });
+
+
+
+//    }
+//  }
 
 
 </script>
