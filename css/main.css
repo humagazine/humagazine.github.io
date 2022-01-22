@@ -253,6 +253,9 @@ header div.d-flex { /* Because on issue.html Bootstrap 4 adds this padding */
 }
 /* END of slim scrollbar */
 
+.subtitle {
+  font-family: Lora SBI;
+}
 
 /* Representative image of the articles */
 .articleImg {
@@ -266,7 +269,6 @@ header div.d-flex { /* Because on issue.html Bootstrap 4 adds this padding */
 .imgCaption {
   font-size: smaller;
 }
-
 
 /* Some article elements:
 Bigger first letter; ASIDE text */
@@ -289,11 +291,13 @@ aside { /* Side notes in the text of the articles */
 
 .imgCaption {
   padding: 1vw;
+  font-family: Lora Reg;
  }
 
  .imgSource {
    margin-bottom: 2vh;
    text-align: center;
+   font-family: Lora Reg;
  }
 
  .articleImg {
@@ -303,8 +307,12 @@ aside { /* Side notes in the text of the articles */
  aside .imgCaption {
    border: none;
    margin: 0;
+   font-family: Lora Reg;
  }
 
+.byline, .publicationDate {
+  font-family: Lora Reg;
+}
 
 iframe {
   width: 100%;
