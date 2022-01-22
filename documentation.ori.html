@@ -31,39 +31,39 @@
 
   <body>
 
+
     <!-- TOP BAR -->
     <div id="topBar" class="sticky-top"></div> <!-- A jQuery function loads content inside this div -->
 
     <!-- body -->
 
-    <div id="documentationMain" class="container justify-content-md-center" >
+    <div id="documentationMain">
+    <main class="container justify-content-md-center" data-bs-spy="scroll" data-bs-target="#navbar-example">
 
       <div class="row g-5">
 
-
-        <div id="docSx" class="col col-md-3">
-          <div class="position-relative" style="top: 2rem;">
-            <div id="list-example" class="list-group list-group-flush sticky">
-              <a class="list-group-item list-group-item-action" href="#framework">LLLL The Framwork</a>
-              <a class="list-group-item list-group-item-action" href="#contentManagement">Content Management</a>
-              <a class="list-group-item list-group-item-action" href="#markup">Markup</a>
-              <a class="list-group-item list-group-item-action" href="#metadataSelection">Metadata Selection</a>
-              <a class="list-group-item list-group-item-action" href="#textAnalysis">Text Analysis</a>
-              <a class="list-group-item list-group-item-action" href="#wikipediaPreviews">Wikipedia Previews</a>
-              <a class="list-group-item list-group-item-action" href="#searchEngine">Search Engine</a>
-              <a class="list-group-item list-group-item-action" href="#messageForm">Message Form</a>
-              <a class="list-group-item list-group-item-action" href="#hUmagazine">hUmagazine</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-3">Theme 1</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-4">Theme 2</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-5">Theme 3</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-6">Theme 4</a>
-            </div>
+      <div id="docSx" class="col col-md-3">
+        <div class="position-sticky" style="top: 2rem;">
+          <div id="list-example" class="list-group list-group-flush sticky">
+            <a class="list-group-item list-group-item-action" href="#framework">LLLL The Framwork</a>
+            <a class="list-group-item list-group-item-action" href="#contentManagement">Content Management</a>
+            <a class="list-group-item list-group-item-action" href="#markup">Markup</a>
+            <a class="list-group-item list-group-item-action" href="#metadataSelection">Metadata Selection</a>
+            <a class="list-group-item list-group-item-action" href="#textAnalysis">Text Analysis</a>
+            <a class="list-group-item list-group-item-action" href="#wikipediaPreviews">Wikipedia Previews</a>
+            <a class="list-group-item list-group-item-action" href="#searchEngine">Search Engine</a>
+            <a class="list-group-item list-group-item-action" href="#messageForm">Message Form</a>
+            <a class="list-group-item list-group-item-action" href="#hUmagazine">hUmagazine</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Theme 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Theme 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Theme 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-6">Theme 4</a>
           </div>
         </div>
-
+      </div>
 
       <div id="docCenter" class="col col-md-6">
-
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
           <div class="position-relative top-0 start-50 translate-middle-x">
             <h1>The hUmagazine Documentation</h1>
           </div>
@@ -299,11 +299,11 @@
             <li><a href="https://www.breakfreegraphics.com/design-blog/glassmorphism-ui-a-new-variant-of-neumorphism/">‘Glassmorphism UI’, a new variant of ‘Neumorphism’?</a></li>
             <li><a href="https://www.behance.net/katro16">Vasjen Katro and Baugasm</a></li>
           </ul>
-
+        </div>
       </div>
 
-      <!--
-      <div id="docDx" class="col col-md-3">
+
+      <div id="docDx" class="col col-md-3"> <!--col-lg-2 -->
         <div class="position-sticky" style="top: 2rem;">
           <div id="list-example" class="list-group list-group-flush">
             <a class="list-group-item list-group-item-action" href="#list-item-1"><img src="img/btns/refresh.png" width="50px" height="50px"></a>
@@ -316,21 +316,27 @@
         </div>
 
       </div>
-    -->
+
+    </main>
   </div>
 
-</div>
-
-
       <!-- FOOTER -->
-    <!-- <div id="footerBar"></div> -->
+    <div id="footerBar"></div>
+
+
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example'
+      })
+    </script>
+
+    <script type="text/javascript">
       !(function (a, b, c, d) {
-    var e = (a[d.k] = {
+  var e = (a[d.k] = {
     w: a,
     d: b,
     n: c,
@@ -1750,19 +1756,19 @@
         }
       };
     })()
-    });
-    e.f.init();
-    })(window, document, navigator, {
-    k: "PIN_" + new Date().getTime(),
-    tv: "2016052401",
-    me: /pinit\.js$/,
-    myDomain: /^https?:\/\/(([a-z]{1,3})\.)?pinterest\.com\//,
-    noneParam: {
+  });
+  e.f.init();
+})(window, document, navigator, {
+  k: "PIN_" + new Date().getTime(),
+  tv: "2016052401",
+  me: /pinit\.js$/,
+  myDomain: /^https?:\/\/(([a-z]{1,3})\.)?pinterest\.com\//,
+  noneParam: {
     ignore: !0,
     none: !0,
     nothing: !0
-    },
-    configParam: [
+  },
+  configParam: [
     "save",
     "hover",
     "color",
@@ -1781,12 +1787,12 @@
     "height",
     "shape",
     "save"
-    ],
-    hoverButtonMinImgSize: 119,
-    hoverButtonOffsetTop: 10,
-    hoverButtonOffsetLeft: 10,
-    dataAttributePrefix: "data-pin-",
-    endpoint: {
+  ],
+  hoverButtonMinImgSize: 119,
+  hoverButtonOffsetTop: 10,
+  hoverButtonOffsetLeft: 10,
+  dataAttributePrefix: "data-pin-",
+  endpoint: {
     pinterest: "https://www.pinterest.com",
     bookmark: "https://assets.pinterest.com/js/pinmarklet.js",
     count: "https://widgets.pinterest.com/v1/urls/count.json?url=%s",
@@ -1794,19 +1800,19 @@
     board: "https://widgets.pinterest.com/v3/pidgets/boards/%s/pins/",
     user: "https://widgets.pinterest.com/v3/pidgets/users/%s/pins/",
     log: "https://log.pinterest.com/"
-    },
-    path: {
+  },
+  path: {
     repin: "/pin/%s/repin/x/",
     report: "/about/copyright/dmca-pin/",
     create: "/pin/create/button/?"
-    },
-    pop: {
+  },
+  pop: {
     base:
       "status=no,resizable=yes,scrollbars=yes,personalbar=no,directories=no,location=no,toolbar=no,menubar=no,%dim%,left=0,top=0",
     small: "width=750,height=320",
     large: "width=1040,height=640"
-    },
-    build: {
+  },
+  build: {
     setStyle: {
       backgroundImage: !0,
       backgroundColor: !0,
@@ -1820,8 +1826,8 @@
       log: !0,
       x: !0
     }
-    },
-    util: {
+  },
+  util: {
     embed_pin_toggle: "menu",
     embed_pin_play: "play",
     button_pinit: "pinOne",
@@ -1837,8 +1843,8 @@
     embed_pin_repin_small: "repin",
     embed_pin_repin_medium: "repin",
     embed_pin_repin_large: "repin"
-    },
-    save: {
+  },
+  save: {
     domain: {
       www: !0,
       uk: !0,
@@ -1972,8 +1978,8 @@
       uk: !0,
       vi: !0
     }
-    },
-    strings: {
+  },
+  strings: {
     cs: {
       followOn: "Sledujte na %s",
       from: "od %s",
@@ -2190,8 +2196,8 @@
       by: "&#273;&#432;a v&agrave;o %s",
       save: "L&#432;u"
     }
-    },
-    svg: {
+  },
+  svg: {
     above: {
       w: "114",
       h: "76",
@@ -2308,8 +2314,8 @@
         }
       ]
     }
-    },
-    styles: {
+  },
+  styles: {
     "._embed_grid": {
       width: "100%",
       "max-width": "257px",
@@ -3132,9 +3138,10 @@
         }
       }
     }
-    }
-    });
+  }
+});
     </script>
+
 
 
   </body>
