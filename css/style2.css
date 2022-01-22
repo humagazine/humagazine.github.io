@@ -159,6 +159,11 @@ button a {
   background-origin: margin-box;
 }
 
+#issueArticles {
+  border-top: none;
+  padding-top: none; 
+}
+
 .olCustom {
   background-color: white !important;
   border: solid;
