@@ -62,7 +62,7 @@
       <!-- Column with article previews -->
       <div class="col leftCol">
         <div id="artPreview1_1" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre1_1" class="row mx-1 py-4 customCol">
+        <div id="artPre1_1" class="row mx-1 py-4 customPreview">
           <div id="imgPre1_1" class="col col-md-5"></div>
           <div id="contentPre1_1" class="col">
             <h6 id="titlePre1_1"></h6>
@@ -71,7 +71,7 @@
         </div>
 
         <div id="artPreview1_2" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre1_2" class="row mx-1 py-4 customCol">
+        <div id="artPre1_2" class="row mx-1 py-4 customPreview">
           <div id="imgPre1_2" class="col col-md-5"></div>
           <div id="contentPre1_2" class="col">
             <h6 id="titlePre1_2"></h6>
@@ -80,7 +80,7 @@
         </div>
 
         <div id="artPreview1_3" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre1_3" class="row mx-1 py-4 customCol">
+        <div id="artPre1_3" class="row mx-1 py-4 customPreview">
           <div id="imgPre1_3" class="col col-md-5"></div>
           <div id="contentPre1_3" class="col">
             <h6 id="titlePre1_3"></h6>
@@ -89,7 +89,7 @@
         </div>
 
         <div id="artPreview2_1" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre2_1" class="row mx-1 py-4 customCol">
+        <div id="artPre2_1" class="row mx-1 py-4 customPreview">
           <div id="imgPre2_1" class="col col-md-5"></div>
           <div id="contentPre2_1" class="col">
             <h6 id="titlePre2_1"></h6>
@@ -98,7 +98,7 @@
         </div>
 
         <div id="artPreview2_2" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre2_2" class="row mx-1 py-4 customCol">
+        <div id="artPre2_2" class="row mx-1 py-4 customPreview">
           <div id="imgPre2_2" class="col col-md-5"></div>
           <div id="contentPre2_2" class="col">
             <h6 id="titlePre2_2"></h6>
@@ -107,7 +107,7 @@
         </div>
 
         <div id="artPreview2_3" style="display:none"></div> <!-- Hidden div only needed to store data -->
-        <div id="artPre2_3" class="row mx-1 py-4 customCol">
+        <div id="artPre2_3" class="row mx-1 py-4 customPreview">
           <div id="imgPre2_3" class="col col-md-5"></div>
           <div id="contentPre2_3" class="col">
             <h6 id="titlePre2_3"></h6>
@@ -353,6 +353,14 @@
           type: 'get',
           success: function(html) {
               getPreData(html,2,1);
+          }
+      });
+
+      $.ajax({
+          url: 'articles/article2_2.html',
+          type: 'get',
+          success: function(html) {
+              getPreData(html,2,2);
           }
       });
 
