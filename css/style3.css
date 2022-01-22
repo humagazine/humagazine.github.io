@@ -345,10 +345,6 @@ a:hover {
   overflow-y: scroll;
 }
 
-.tab-content {
-  font-family: Simple Things !important; /* non funziona */
-}
-
 hr {
   border:0;
   margin: 0.5vh;
@@ -368,6 +364,10 @@ hr {
 /* Slim scrollbar */
 ::-webkit-scrollbar {
     display: none;
+}
+
+#metaRow label {
+  font-family: Simple Things !important;
 }
 
 #metaData1 {
@@ -457,3 +457,5 @@ footer p, footer .nav-link {
 label, input {
   font-family: ZineTime;
 }
+
+
