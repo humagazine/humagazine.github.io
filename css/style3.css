@@ -404,6 +404,8 @@ hr {
   position: relative;
 }
 
+/*
+
 #article1 {
   transform: rotate(-2deg);
   position: relative;
@@ -434,7 +436,7 @@ hr {
   top: -1.5em;
   position: relative;
 }
-
+*/
 .wmf-wp-with-preview {
   color: #fb42cc!important;
   font-family: ZineTime !important;
