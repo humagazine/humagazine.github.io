@@ -345,7 +345,7 @@ a:hover {
   overflow-y: scroll;
 }
 
-#content1, #content2, #content3 {
+.tab-content {
   font-family: Simple Things !important; /* non funziona */
 }
 
