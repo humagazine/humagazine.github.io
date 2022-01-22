@@ -221,10 +221,6 @@ a:hover {
   word-wrap: break-word;
 }
 
-.containerMeta {
-  padding: 0 10vw 0 10vw;
-}
-
 #art2 {
   background-image: url(bgpaper.png);
   background-position: center;
@@ -259,6 +255,7 @@ a:hover {
   background-size: 80vh, 50vh, 55vh, 50vh, 40vh, 40vh;
   background-origin: content-box;
   background-position: bottom left, top right, top left, bottom right, center left, center right;
+  text-align: none !important;
 }
 
 #issueArticles {
