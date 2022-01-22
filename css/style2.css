@@ -283,15 +283,9 @@ border-radius: 20px;
 margin-bottom: 2vh;
 }
 
-iframe{
-  border-image: url(VideoPlayer.png);
-  border-image-slice: 27 161 27 27;
-  border-image-width: 20px 60px 20px 20px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: stretch round;
-  width: 100%;
-  height: auto;
-  padding: 1.6vh 5.5vw 1.6vh 1.3vw;
+#iframe{
+  padding: 2vh;
+  background-color: white;
   border: 3px solid #d4121a;
   border-radius: 20px;
   margin-bottom: 2vh;
