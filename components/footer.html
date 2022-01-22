@@ -14,7 +14,7 @@
         <h3>Team</h3>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" id="teamMate1" class="nav-link p-0 fw-normal text-dark">Diego Chillo</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">A creaky old man. Self-proclaimed code expert, he's pathetically trying to forget the years by going back to school.</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">Software developer with a degree in philosophy. Butler of a couple of cats, musician in his spare time.</a></li>
           <li class="nav-item mb-2"><a href="#" id="teamMate2" class="nav-link p-0 fw-normal text-dark">Laura Travaglini</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 fw-light text-muted">The young one, with fresh ideas and an extra gear when it comes to graphic choices and original features.</a></li>
         </ul>
@@ -58,12 +58,12 @@
 
     var useremail=document.getElementById("emailAddress").value;
     var commentcontent=document.getElementById("comment").value;
-    // , laura.travaglini@icloud.com
+    //
   	Email.send({
     Host : "smtp.gmail.com",
     Username : "humagazine22@gmail.com",
-    Password : "12345678",
-  	To : "diego.chillo@outlook.it",
+    Password : "fakepwd",
+  	To : "diego.chillo@outlook.it, laura.travaglini@icloud.com",
   	From : "humagazine22@gmail.com",
   	Subject : "A message from hUmagazine website",
   	Body : "<div>This is an email sent from hUmagazine's contact form.<br/><br/></div><div>The user " + useremail + " says: <br/><br/></div><div>" + commentcontent+"<br/></div>",
