@@ -83,6 +83,10 @@ p {
   background-color: rgb(33,37,41)!important;
 }
 
+hr {
+  background-color: darkgray;
+}
+
 /* homepage */
 
 #centralMain {
@@ -138,6 +142,11 @@ p {
   text-align: center;
 }
 
+#issueArticles {
+  border-top: 1px solid darkgrey;
+  padding-top: 5vh;
+}
+
 #issueMeta p{
   text-align: center;
 }
@@ -170,12 +179,28 @@ p {
   font-weight: 700;
 }
 
-#tabs1 a:hover, #tabs2 a:hover, #tabs3 a:hover, #tabs1 a.active, #tabs2 a.active, #tabs3 a.active {
-  background-color: #f8f9fa;
+.nav-tabs {
+  border-bottom: 1px solid darkgrey;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid darkgrey;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #212529;
+  color: white;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #212529;
+  color: white;
 }
 
 .sepLine {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid darkgray;
   margin-right:20px;
   margin-left:10px;
 }
@@ -257,7 +282,7 @@ aside { /* Side notes in the text of the articles */
   font-style: italic;
   font-size: larger;
   padding: 1vh 2vw 1vh 1vh;
-  border-right: 1px solid #dee2e6;
+  border-right: 1px solid darkgray;
   word-wrap: break-word;
   margin: 2vh 2vw 2vh 0;
 }

@@ -317,6 +317,11 @@ a:hover {
   color: #fb42cc;
 }
 
+.nav-tabs .nav-link:hover {
+  background-color: transparent !important;
+  color: #fb42cc;
+}
+
 #tabs1, #tabs2, #tabs3 {
   justify-content: space-evenly !important;
   border-bottom: transparent;
