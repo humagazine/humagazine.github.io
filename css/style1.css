@@ -249,6 +249,10 @@ body {
   height: 8vh;
 }
 
+.customPreview a.img {
+  padding-bottom: 0px;
+}
+
 /* documentatin pg */
 
 #documentationMain {
@@ -343,7 +347,7 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
 #btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active {
   color: white !important;
   text-align: center !important;
-} 
+}
 
 #btnIssue:hover, #footer button:hover, .customCol button:hover, #centralMain button:hover {
   color: white !important;
@@ -433,7 +437,7 @@ margin-bottom: 2vh;
   padding: 1vw;
   text-align: center;
 }
- 
+
 aside {
   border: 1px solid #B63323;
   border-radius: 20px;
@@ -441,7 +445,7 @@ aside {
   width: 50%;
   margin: 2vh 2vw 2vh 0;
  }
- 
+
 aside .imgCaption {
    border: none;
    margin: 0;
