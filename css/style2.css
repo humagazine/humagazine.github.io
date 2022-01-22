@@ -161,7 +161,7 @@ button a {
 
 #issueArticles {
   border-top: none;
-  padding-top: none; 
+  padding-top: none;
 }
 
 .olCustom {
@@ -310,9 +310,9 @@ iframe{
 
 .tech-slideshow > div {
   height: 100%;
-  width: 2526px;
+  width: 5988px; /*2526px;*/
   background-image: url(bannerstyle2.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   position: absolute;
   height: 100%;
   transform: translate3d(0, 0, 0);
