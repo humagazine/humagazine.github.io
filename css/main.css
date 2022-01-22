@@ -176,7 +176,7 @@ hr {
 /* Metadata columns */
 
 .metaCol {
-    height: 18vh;
+    height: 28vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
