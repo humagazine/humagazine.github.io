@@ -223,8 +223,14 @@ header button {
   height: fit-content;
 }
 
+#tabs1 .nav-link, #tabs2 .nav-link, #tabs3 .nav-link{
+  color: #d235ff !important;
+}
+
 #tabs1 .nav-link:hover, #tabs2 .nav-link:hover, #tabs3 .nav-link:hover {
-  color: #d235ff!important;
+  color: black !important;
+  border-bottom: 2px solid #d235ff;
+  background-color: #d235ff;
 }
 
 #tabs1 .nav-link.active, #tabs2 .nav-link.active, #tabs3 .nav-link.active{
