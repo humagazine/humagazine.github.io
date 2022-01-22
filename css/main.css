@@ -33,6 +33,11 @@ h3 {
   text-transform: uppercase;
 }
 
+#currentDateTime {
+  border:none;
+  font-family: Lora SBI;
+}
+
 .step {
   font-weight: bold;
 }
@@ -51,7 +56,6 @@ p {
   text-align: justify;
 }
 
-
 #btnIssue, #footer button, .customCol button, #centralMain button, #openIssue button {
   border: 0.5px solid  rgb(33,37,41) !important;
   border-radius: 20px;
@@ -64,7 +68,7 @@ p {
   color: rgb(33,37,41)!important;
 }
 
-#btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active, #openIssue a.active  {
+#btnIssue:hover, #btnIssue a:hover, .customCol a:hover, #centralMain a:hover, #btnIssue a.active, .customCol a.active, #centralMain a.active, #openIssue a.active  {
   color:  white !important;
 }
 
@@ -127,10 +131,15 @@ p {
 }
 
 /* Issue Cover */
-#issueMeta {
-  text-align: center !important;
+
+#coverstyle1 {
+  text-align: center;
 }
 
+#issueMeta p{
+  text-align: center;
+}
+ 
 #btnIssue {
   text-decoration-line: none !important;
 }

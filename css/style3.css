@@ -57,7 +57,7 @@ h1, h3 {
   text-align: center;
 }
 
-h2, #kW, .subtitle {
+h2, #kW, .subtitle, #currentDateTime {
   font-family: ZineTime;
 }
 
@@ -343,7 +343,7 @@ hr {
   border:0;
   margin: 0.5vh;
   height: 1vh;
-  background-image:url(border3.png);
+  background-image: url(border3.png) !important;  
   background-size: contain;
 }
 
