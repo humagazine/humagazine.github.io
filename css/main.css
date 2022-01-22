@@ -137,6 +137,7 @@ h6, h6:hover, h6 a {
 #docCenter{
   height: 72vh;
   overflow-y: scroll;
+  scroll-behavior: smooth;
  }
  #docCenter::-webkit-scrollbar {
    display: none;
