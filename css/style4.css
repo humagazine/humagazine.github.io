@@ -154,6 +154,8 @@ header button {
 #issueArticles {
   text-align: center;
   height: auto;
+  border-top: none;
+  padding-top: none;
 }
 
 .coverCustom {

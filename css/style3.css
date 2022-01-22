@@ -195,6 +195,11 @@ a:hover {
   word-wrap: break-word;
 }
 
+#issueArticles {
+  border-top: none;
+  padding-top: none;
+}
+
 #issueMeta {
  padding: 4vh 1vw 0 1vw;
 }
