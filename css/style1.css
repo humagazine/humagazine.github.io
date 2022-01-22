@@ -509,6 +509,7 @@ margin-bottom: 0;
 
 .author, .endTags {
   font-family: Flanker Italic !important;
+  text-align: center;
 }
 
 .lastPar{
