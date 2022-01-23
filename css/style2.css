@@ -360,7 +360,7 @@ margin-bottom: 2vh;
   text-transform: uppercase;
 }
 
-.imgCaption {
+.imgCaption, figcaption {
  border: 3px solid #d4121a;
  border-radius: 20px;
  background-color: white;

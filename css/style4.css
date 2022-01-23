@@ -213,7 +213,7 @@ header button {
   color: #d235ff !important;
 }
 
-.articleImg {
+.articleImg, #docCenter img {
   border-radius: 20px;
   margin: 1vh;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -285,12 +285,6 @@ header button {
   box-shadow: 0px 0px 10px #d235ff;
 }
 
-/* controllare */
-.articleImg {
-  -webkit-clip-path: ellipse(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
- clip-path: ellipse(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-}
-
 /* footer */
 
 .footerCustom {
@@ -354,7 +348,7 @@ aside {
                -10px -10px 30px #ffffff71;
 }
 
-.imgCaption {
+.imgCaption, figcaption {
   border-radius: 20px;
   border: none !important;
   border-color: transparent !important;
@@ -363,6 +357,11 @@ aside {
                -10px -10px 30px #ffffff71;
   margin-top: 1vh;
   font-family: Antikor Reg;
+}
+
+
+figcaption {
+  padding: 2vh;
 }
 
 aside .imgCaption {
