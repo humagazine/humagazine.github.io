@@ -577,3 +577,7 @@ a[year]:hover:after {
 #teamMate1, #teamMate2 {
   font-weight: bold !important;
 }
+
+#footer img {
+  margin-right: 1vw;
+}
