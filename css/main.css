@@ -153,6 +153,10 @@ h6, h6:hover, h6 a {
  #docCenter::-webkit-scrollbar {
    display: none;
 }
+#docCenter img {
+  margin-bottom: 1vh;
+}
+
 
 /* Issue Cover */
 
