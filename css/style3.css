@@ -207,7 +207,7 @@ a:hover {
  padding: 4vh 1vw 0 1vw;
 }
 
-#art1 {
+#art1, #art2, #art3 {
   background-image: url(bgpaper.png);
   background-position: center;
   background-size: 70vh;
@@ -215,38 +215,8 @@ a:hover {
   background-origin: border-box;
   height: 50vh;
   transform: rotate(-4deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   word-wrap: break-word;
-}
-
-#art2 {
-  background-image: url(bgpaper.png);
-  background-position: center;
-  background-size: 70vh;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  height: 50vh;
-  transform: rotate(4deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  word-wrap: break-word;
-}
-
-#art3 {
-  background-image: url(bgpaper.png);
-  background-position: center;
-  background-size: 70vh;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  height: 50vh;
-  transform: rotate(-4deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  word-wrap: break-word;
+  padding: 15vh 4vw 0 4vw;
 }
 
 #coverstyle1 {
