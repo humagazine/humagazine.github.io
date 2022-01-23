@@ -74,11 +74,11 @@ body {
   text-align: left !important;
 }
 
-a {
+a, #documentationMain .list-group-item {
   color: #fb42cc;
 }
 
-a:hover {
+a:hover, #documentationMain .list-group-item:hover {
   color: black;
 }
 
@@ -178,6 +178,13 @@ a:hover {
 .rightCol {
   border-left: none;
 }
+
+#documentationMain .list-group-item{
+  background-color: transparent !important;
+  border-bottom: none;
+}
+
+
 
 /* coverissue */
 
