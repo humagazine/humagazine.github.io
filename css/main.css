@@ -33,6 +33,11 @@ h2, #kW {
   text-align: center;
 }
 
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
 h3 {
   font-family: Lora SBI;
   text-transform: uppercase;
