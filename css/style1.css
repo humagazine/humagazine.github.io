@@ -550,6 +550,10 @@ hr {
   background-color: transparent !important;
 }
 
+#centralMain hr {
+  background-image: none !important;
+}
+
 /* article page: metadata */
 
 #metaData1, #metaData2, #metaData3 {
