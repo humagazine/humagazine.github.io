@@ -53,12 +53,6 @@
               <a class="list-group-item list-group-item-action" href="#searchEngine">Search Engine</a>
               <a class="list-group-item list-group-item-action" href="#messageForm">Message Form</a>
               <a class="list-group-item list-group-item-action" href="#hUmagazine">hUmagazine</a>
-              <!--
-              <a class="list-group-item list-group-item-action" href="#list-item-3">Theme 1</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-4">Theme 2</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-5">Theme 3</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-6">Theme 4</a>
-            -->
             </div>
           </div>
         </div>
@@ -93,6 +87,7 @@
             <li>The files of the individual articles, stored in the <code>/articles</code> folder, whose names must have this standard syntax:<br/>
             <code>article[n_magazine]_[n_article].html</code> (e.g. "article1_3.html" for the third article of the first issue).<br/></li>
             <li>Images and other multimedia contents can be stored in the <code>/img</code> folder and organized into separate subfolders for each article. However, they can also be stored elsewhere or loaded from external URLs.</li>
+            <li>The glossaryDb.json file in the root directory can contain any number of terms with corresponding definitions in JSON format. Each time the home page is loaded, the system randomly chooses a word and displays its definition in the right column.</li>
           </ul>
           <p>Very important for the correct display of the articles' previews on the home page are the ids assigned to the title, the subtitle, the author and the main image inside the article. The expected ids are respectively <code>title[n_magazine]_[n_article]</code>, <code>subtitle[n_magazine]_[n_article]</code>, <code>byline[n_magazine]_[n_article]</code>, and <code>img[n_magazine]_[n_article]</code></p>
           <p>The system also reads the issuesDb.json file to determine how many magazine issues have been defined, then dynamically arranges the corresponding items in the main menu, along with the covers and the contents while browsing.</p>
