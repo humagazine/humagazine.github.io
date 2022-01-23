@@ -22,10 +22,15 @@
 
 h1 {
   font-family: Lora Bold;
+  text-align: center;
 }
 
 h2, #kW {
   font-family: Lora SBI;
+}
+
+#docCenter h2 {
+  text-align: center;
 }
 
 h3 {
