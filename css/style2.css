@@ -279,13 +279,14 @@ tr:nth-child(even){background-color: #db5550}
   font-family: Rocket;
 }
 
-.articleImg {
+.articleImg, #docCenter img {
 filter: brightness(110%) saturate(216%) contrast(55%);
 -webkit-filter: brightness(110%) saturate(216%) contrast(55%);
 -moz-filter:  brightness(110%) saturate(216%) contrast(55%);
 -ms-filter:  brightness(110%) saturate(216%) contrast(55%);
 -o-filter: brightness(110%) saturate(216%) contrast(55%);
-border: 3px solid #d4121a;
+border: 3px solid #d4121a !important
+;
 border-radius: 20px;
 margin-bottom: 2vh;
 }
