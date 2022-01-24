@@ -149,6 +149,10 @@ button a, #coverstyle1 button a {
   margin-bottom: 2vh;
 }
 
+#docDx .list-group-item {
+  width: fit-content;
+}
+
 /* cover issue */
 
 #coverstyle1 {

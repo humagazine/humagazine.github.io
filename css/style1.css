@@ -228,6 +228,10 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   color: white;
 }
 
+#docDx .list-group-item {
+  width: fit-content;
+}
+
 /* cover */
 
 #issueArticles {

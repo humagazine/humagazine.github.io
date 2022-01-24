@@ -183,6 +183,10 @@ header button {
   margin-bottom: 2vh;
 }
 
+#docDx .list-group-item {
+  width: fit-content;
+}
+
 /* articles */
 
 .artiCol, .metaCol, #footerBar, .headerCustom, .dropdown-menu, .dropdown-item:hover, .customCol, .coverCustom {
