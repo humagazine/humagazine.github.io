@@ -60,7 +60,7 @@ body {
   text-align: left !important;
 }
 
-a, #documentationMain .list-group-item:hover {
+a, #documentationMain .list-group-item:hover, .step {
   color: #fb42cc;
 }
 
