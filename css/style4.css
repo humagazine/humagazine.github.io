@@ -16,6 +16,7 @@
  }
 
  /* topbar (background and glass effect specified with the articles and the footer) */
+ 
 #mainMenu li {
   font-family: Britanica;
   text-transform: uppercase;
@@ -124,8 +125,7 @@ a:hover {
 	}
 }
 
-button, .kwCustom, #art1, #art2, #art3, 
-.customPreview img {
+button, .kwCustom, #art1, #art2, #art3, .customPreview img {
   transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
@@ -219,7 +219,6 @@ header button {
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
-
 
 /* metadata nav tablist style */
 

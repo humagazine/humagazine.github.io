@@ -10,12 +10,6 @@
   src: url("./fonts/style2/OPTIMA.TTF");
 }
 
-
-@font-face {
-  font-family: "Futura";
-  src: url("./fonts/style2/futura\ light\ bt.ttf");
-}
-
 /* topbar */
 
 #issuesList li {
