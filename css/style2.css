@@ -50,7 +50,7 @@ a {
   color: #db5550;
 }
 
-a:hover {
+a:hover, .step {
   color: #d4121a;
 }
 
