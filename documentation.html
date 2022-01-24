@@ -96,8 +96,9 @@
 
 
           <h2 id="markup">Markup</h2>
-          <p>The articles were tagged with significant metadata using <code>data-*</code> attributes, that give us the ability to embed custom data inside HTML elements, access them via the <code>dataset</code> property (or the <code>.data()</code> method in jQuery), and avoid Ajax calls or server-side database queries.</p>
-          <p>Each tag contains the following attributes (required for the selector to work properly):</p>
+          <p>The articles were tagged with significant metadata using classes and <code>data-*</code> attributes, that give us the ability to embed custom data inside HTML elements, access them via the <code>dataset</code> property (or the <code>.data()</code> method in jQuery), and avoid Ajax calls or server-side database queries.</p>
+          <p>Each metadata tag - mainly <code>&lt;span&gt;</code> tags - must specify <code>mention</code> and one of the following metadata types as classes: <code>person, language, place, date, organization, keyword</code>.
+          <p>Each element needs the following attributes (required for the selector to work properly):</p>
           <ul>
             <li><code>data-label</code>: It's the label that will be shown in the Metadata Selector;</li>
             <li><code>data-sort</code>: It's the string that will be used for sorting (e.g. for persons, with the last name before the first name);</li>
