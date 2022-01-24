@@ -46,6 +46,14 @@ h1, h2, h3, #kW, .metaTitle {
   color: #d4121a !important;
 }
 
+a {
+  color: #db5550;
+}
+
+a:hover {
+  color: #d4121a;
+}
+
 body {
   background-color: #FAF8F9;
   background-image: url(bgstyle2.jpg);
