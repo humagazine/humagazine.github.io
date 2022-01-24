@@ -16,7 +16,7 @@
  }
 
  /* topbar (background and glass effect specified with the articles and the footer) */
- 
+
 #mainMenu li {
   font-family: Britanica;
   text-transform: uppercase;
@@ -172,9 +172,9 @@ header button {
   border-left: none;
 }
 
-.customPreview, #list-example {
+.customPreview, #documentationMain .list-group-item {
   background: #f8eadf8e !important;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+  box-shadow: 0 8px 32px 0 rgba(88, 90, 129, 0.37) !important;
   backdrop-filter: blur( 13px ) !important;
   -webkit-backdrop-filter: blur( 13px ) !important;
   border-radius: 10px !important;
