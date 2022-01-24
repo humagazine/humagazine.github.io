@@ -80,6 +80,7 @@
             <li>the actual magazine, always made up of 3 articles displayed side by side and their respective metadata selectors.</li>
           </ul>
           <p>At any time, the reader can change the typography style using the hand icons. The selected style will be maintained when switching to another page, thanks to a session cookie that stores the active theme status.</p>
+          <p>The framework runs on <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank">Bootstrap 4.3.1</a> and <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">5.1.3</a>, and <a href="https://jquery.com/" target="_blank">jQuery 3.5.1</a>.
 
           <h2 id="contentManagement">Content Management</h2>
           <p>The contents of magazines are stored inside the following elements, that must always be present in the hosting space of the website:</p>
@@ -95,8 +96,9 @@
 
 
           <h2 id="markup">Markup</h2>
-          <p>The articles were tagged with significant metadata using <code>data-*</code> attributes, that give us the ability to embed custom data inside HTML elements, access them via the <code>dataset</code> property (or the <code>.data()</code> method in jQuery), and avoid Ajax calls or server-side database queries.</p>
-          <p>Each tag contains the following attributes (required for the selector to work properly):</p>
+          <p>The articles were tagged with significant metadata using classes and <code>data-*</code> attributes, that give us the ability to embed custom data inside HTML elements, access them via the <code>dataset</code> property (or the <code>.data()</code> method in jQuery), and avoid Ajax calls or server-side database queries.</p>
+          <p>Each metadata tag - mainly <code>&lt;span&gt;</code> tags - must specify <code>mention</code> and one or more of the following metadata types as classes: <code>person, language, place, date, organization, keyword</code>.
+          <p>Each element needs also the following attributes (required for the selector to work properly):</p>
           <ul>
             <li><code>data-label</code>: It's the label that will be shown in the Metadata Selector;</li>
             <li><code>data-sort</code>: It's the string that will be used for sorting (e.g. for persons, with the last name before the first name);</li>
