@@ -2,7 +2,6 @@
 
 */
 
-
 @font-face{
   font-family: "GoudyIni";
   src: url("./fonts/style1/GoudyIni.ttf");
@@ -59,14 +58,14 @@
   text-transform: uppercase;
   background-color: #f6f1e8;
   border: 1px solid black !important;
-  border-radius: 50px !important;
-  padding: 5px;
+  border-radius: 30px !important;
+  padding: 3px;
 }
 
 #mainMenu .dropdown-menu {
   border: 1px solid black;
   border-radius: 20px !important;
-  padding: 10px;
+  padding: 5px;
   color: #B63323;
   background-color: #f6f1e8;
 }
@@ -100,6 +99,10 @@
   background-color: #f6f1e8;
 }
 
+#searchBtn:hover {
+  background-color: #B63323;
+}
+
 input, textarea {
   border: 1px solid black !important;
 }
@@ -110,56 +113,6 @@ a[year]:hover:after {
   font-family:"Century Schoolbook",Times,serif; /*"Century Schoolbook Monospace",*/
   left: 7%;
   top: 35px;
-}
-
-/* footer */
-
-.footerCustom {
-  background-color: #f6f1e8 !important;
-  border-top: 2px solid black;
-  background-image: url(topbar1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
-footer h3 {
-  text-shadow: 1px 1px 2px white, 0 0 1em white
-  , 0 0 0.5em #f6f1e8;
-  font-family: Flanker Bold;
-  text-transform: uppercase;
-}
-
-footer form {
-  border: 1px solid black;
-  background-color: #f6f1e8;
-  padding: 2vh !important;
-  border-radius: 10px;
-}
-
-textarea::-webkit-scrollbar {
-  display: none;
- }
-
-footer p, footer li {
-  background-color: #f6f1e8 !important;
-  padding: 2vh 2vw;
-  border-radius: 10px;
-  border: 1px solid black;
-}
-
-footer .nav-link {
- color: black !important;
-}
-
-#teamMate1, #teamMate2 {
-  font-family: Flanker Bold !important;
-}
-
-#copy {
-  border-top: 1px solid black !important;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 /* text */
@@ -270,8 +223,9 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
   border-bottom: 1px solid black;
 }
 
-#list-example {
-  box-shadow: black;
+.list-group-item:hover {
+  background-color: #B63323;
+  color: white;
 }
 
 /* cover */
@@ -629,4 +583,55 @@ hr {
 
 .list-group-item {
   background-color: #f6f1e8;
+}
+
+
+/* footer */
+
+.footerCustom {
+  background-color: #f6f1e8 !important;
+  border-top: 2px solid black;
+  background-image: url(topbar1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+footer h3 {
+  text-shadow: 1px 1px 2px white, 0 0 1em white
+  , 0 0 0.5em #f6f1e8;
+  font-family: Flanker Bold;
+  text-transform: uppercase;
+}
+
+footer form {
+  border: 1px solid black;
+  background-color: #f6f1e8;
+  padding: 2vh !important;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+ }
+
+footer p, footer li {
+  background-color: #f6f1e8 !important;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+footer .nav-link {
+ color: black !important;
+}
+
+#teamMate1, #teamMate2 {
+  font-family: Flanker Bold !important;
+}
+
+#copy {
+  border-top: 1px solid black !important;
+  padding: 10px;
+  border-radius: 10px;
 }

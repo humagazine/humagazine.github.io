@@ -55,7 +55,7 @@ body {
   font-family: Optima;
 }
 
-button, #btnIssue, #mainMenu li, .dropdown-menu, #mainBody button, .customCol button, #footer button {
+button, #coverstyle1 button, #mainMenu li, .dropdown-menu, #mainBody button, .customCol button, #footer button {
   border-color: #FAF8F9 !important;
   border: 2px solid!important;
   color: #FAF8F9 !important;
@@ -74,19 +74,19 @@ button, #btnIssue, #mainMenu li, .dropdown-menu, #mainBody button, .customCol bu
   color: #FAF8F9 !important;
 }
 
-button:hover, #btnIssue:hover, #mainMenu li:hover, .dropdown-item:hover, #mainBody button:hover, #centralMain button:hover, #footer button:hover {
+button:hover, #coverstyle1 button:hover , #mainMenu li:hover, .dropdown-item:hover, #mainBody button:hover, #centralMain button:hover, #footer button:hover {
   background: #d4121a !important;
   border-color: #FAF8F9 !important;
   border-radius: 10px 10px 10px 10px !important;
 }
 
-button a {
+button a, #coverstyle1 button a {
   color: #FAF8F9 !important;
 }
 
 .customCol {
   border: solid !important;
-  background-color: white !important;
+  background-color: #FAF8F9 !important;
   border-radius: 10px !important;
   border-color: #db5550 !important;
 }
@@ -143,7 +143,7 @@ button a {
 .customPreview {
   border: 3px solid #d4121a !important;
   border-radius: 20px !important;
-  background-color: white !important;
+  background-color: #FAF8F9 !important;
   margin-bottom: 2vh;
 }
 
@@ -172,7 +172,7 @@ button a {
 }
 
 .olCustom {
-  background-color: white !important;
+  background-color: #FAF8F9 !important;
   border: solid;
   border-radius: 10px;
   border-color: #db5550 !important;
@@ -184,11 +184,11 @@ button a {
   margin-left: auto;
   margin-right: auto;
   overflow-y: clip;
-  color: white ;
+  color: #FAF8F9 ;
 }
 
 .metaTitle {
-  color: white;
+  color: #FAF8F9;
 }
 
 #artN1KW1, #artN2KW1, #artN3KW1, #artN1KW2, #artN2KW2, #artN3KW2, #artN1KW3, #artN2KW3, #artN3KW3 {
@@ -204,10 +204,23 @@ padding-top: 15vh;
   height: auto;
 }
 
-#btnIssue {
-  border-radius: 50%;
-  border: 1px solid black;
-  padding: 18px;
+#art1, #art2, #art3 {
+  background-color: transparent;
+}
+
+
+/* documentation pg */
+
+#documentationMain .list-group-item {
+  background-color: #db5550 ;
+  color: #FAF8F9;
+  border-radius: 10px !important;
+  margin-bottom: 1vh;
+}
+
+#documentationMain .list-group-item:hover {
+  background-color: #d4121a;
+  color: #FAF8F9;
 }
 
 /* nav-tabs */
@@ -254,7 +267,6 @@ position: sticky !important;
 #metaData1, #metaData2, #metaData3 {
   height: 28vh;
 }
-/* controllare */
 
 #frameData1, #frameData2, #frameData3 {
   overflow-y: scroll;
@@ -268,10 +280,10 @@ position: sticky !important;
 
 th {
   background-color: #d4121a !important;
-  color: white;
+  color: #FAF8F9;
 }
 
-tr:nth-child(odd){background-color: white !important}
+tr:nth-child(odd){background-color: #FAF8F9!important}
 tr:nth-child(even){background-color: #db5550}
 
 .mention {
@@ -293,7 +305,7 @@ margin-bottom: 2vh;
 
 #iframe{
   padding: 2vh;
-  background-color: white;
+  background-color: #FAF8F9 ;
   border: 3px solid #d4121a;
   border-radius: 20px;
   margin-bottom: 2vh;
@@ -364,7 +376,7 @@ margin-bottom: 2vh;
 .imgCaption, figcaption {
  border: 3px solid #d4121a;
  border-radius: 20px;
- background-color: white;
+ background-color: #FAF8F9;
  padding: 1vh;
 }
 
@@ -376,7 +388,7 @@ margin-bottom: 2vh;
 aside {
  border: 3px solid #d4121a;
  border-radius: 20px;
- background-color: white;
+ background-color: #FAF8F9;
  padding: 1vw;
  width: 50%;
  margin: 2vh 2vw 2vh 0;
