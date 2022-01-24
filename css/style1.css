@@ -247,6 +247,11 @@ background-image: url(framesxstyle1.png), url(framedxstyle1.png);
  background-origin: border-box;
 }
 
+#coverstyle1 .list-group-item:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+
 .olCustom {
  border-radius: 20px !important;
  border:1px solid black;
